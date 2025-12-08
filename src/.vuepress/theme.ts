@@ -7,13 +7,13 @@ export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "NickAe",
+    // url: "",
   },
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: " ",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "CSUFTMC/CSUFTMC.github.io",
 
   docsDir: "src",
 
@@ -30,7 +30,7 @@ export default hopeTheme({
   // 加密配置
   encrypt: {
     config: {
-      "/demo/encrypt.html": {
+      "/docs/encrypt.html": {
         hint: "Password: 1234",
         password: "1234",
       },
@@ -121,11 +121,8 @@ export default hopeTheme({
   plugins: {
     // 注意: 仅用于测试! 你必须自行生成并在生产环境中使用自己的评论服务
     comment: {
-      provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
-      category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
+      provider: "Waline",
+      serverURL: "https://waline.csuftmc.dpdns.org",
     },
 
     components: {

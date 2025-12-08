@@ -1,7 +1,7 @@
 ---
 home: true
 icon: house
-title: 🌲主页
+title: 主页
 heroImage: /assets/logo/csuftmc_logo.png # 请替换为你的社团Logo路径
 bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
 bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
@@ -10,13 +10,15 @@ bgImageStyle:
 heroText: 🌲 CSUFTMC
 tagline: 在中南林业科技大学，我们用代码和方块构建无限可能的世界！欢迎加入我们，探索 Minecraft 的技术与乐趣！
 actions:
-  - text: 加入社团/纳新
+  - text: 加入我们
     icon: user-plus
     link: https://qun.qq.com/universal-share/share?ac=1&authKey=yVPMC4Gm%2BCkgx%2BUhudMJ1AA/xL9aEuulnPURbd4dxLoQH3nZKgVglRqJ1UHt08e/&busi_data=eyJncm91cENvZGUiOiI5OTYwNzI3MTIiLCJ0b2tlbiI6ImVlT25iaGR4MFlLMTd6S3BQZ1BFRFRldlYzVFIwcXRoNFR2dkVaeU83NW5TenFqSURuK2N3NWcyaEt1MGd2WkkiLCJ1aW4iOiIzOTgyOTQ4NDcxIn0=&data=VG6c1ZLBB15XLTc24BsY1a3W3-Xn2T3uVTuLVPwSxZwPLaeTBU968bP7HjlXcP9cR97oOOczfp4bi-v590f5YWR6NpvX9qycwEDDagbdlSo&svctype=5&tempid=h5_group_info # 假设有一个“如何加入”的页面
     type: primary
 
-  - text: 服务器指引
-    link: ./server/index.html # 假设有服务器介绍和连接指引页面
+  - text: 服务器列表
+    link: ./servers 
+    icon: server
+    type: primary
 
 highlights:
   # - header: 易于上手 🚀
@@ -39,22 +41,22 @@ highlights:
       - title: 红石电路
         icon: microchip
         details: 学习自动化和逻辑电路的原理与实践。
-        link: ./tech/redstone.html
+        # link: ./tech/redstone.html
 
       - title: 服务器运维
         icon: server
         details: 学习服务器架构、插件配置与性能优化。
-        link: ./tech/server-ops.html
+        # link: ./tech/server-ops.html
 
       - title: 模组/插件开发
         icon: code
         details: 参与或学习 Java/Kotlin 模组/插件编写。
-        link: ./tech/mod-dev.html
+        # link: ./tech/mod-dev.html
 
       - title: 建筑与美学
         icon: mountain-city
         details: 提升建筑技巧，从规划到落地的美学实践。
-        link: ./creation/building.html
+        # link: ./creation/building.html
 
   - header: 🥳 社团活动与文化
     description: 丰富多彩的线上/线下活动，让大学生活更有趣。
@@ -70,17 +72,17 @@ highlights:
       - title: 主题生存挑战
         icon: helmet-safety
         details: 定期举办，考验团队合作和生存技巧。
-        link: ./activities/survival-challenge.html
+        # link: ./activities/survival-challenge.html
 
       - title: 钓鱼比赛
         icon: helmet-safety
         details: 每天晚上9点30分准时开始
-        link: ./activities/inter-club.html
+        # link: ./activities/inter-club.html
 
       - title: 学习服务器运维
         icon: city
         details: 由资深学长带领学习
-        link: ./activities/annual-project.html
+        # link: ./activities/annual-project.html
 
   - header: 🌐 保持连接
     description: 关注我们，获取最新服务器动态和社团通知。
