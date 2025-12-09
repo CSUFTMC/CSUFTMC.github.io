@@ -2,6 +2,8 @@
 title: 服务器列表
 icon: server
 footer: false
+sidebar: false
+comment: false
 ---
 
 ## **🎮 服务器列表概览**
