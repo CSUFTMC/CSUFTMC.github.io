@@ -121,8 +121,11 @@ export default hopeTheme({
   plugins: {
     // 注意: 仅用于测试! 你必须自行生成并在生产环境中使用自己的评论服务
     comment: {
-      provider: "Waline",
-      serverURL: "https://waline.csuftmc.dpdns.org",
+      provider: "Giscus",
+      repo: "CSUFTMC/Giscus",
+      repoId: "R_kgDOQleW8w",
+      category: "General",
+      categoryId: "DIC_kwDOQleW884CzlDr",
     },
 
     components: {
