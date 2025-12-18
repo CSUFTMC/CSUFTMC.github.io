@@ -18,15 +18,14 @@ comment: false
 
 **生存服已于2025年12月18日迁移到此服**
 
-![main-motd](https://motd.minebbs.com/api/status_img?ip=frp-oak.com&port=55907&stype=je&theme=simple)
-
 **连接地址 (CSUFTMC)**
 
 | 描述                | 地址                           |
 | :------------------ | :----------------------------- |
 | 移动ipv6直连 (推荐) | `ipv6.csuftmc.dpdns.org:25565` |
 | 宁波三网(通用)      | `frp-oak.com:55907`            |
-|                     |                                |
+
+<img src="https://motd.minebbs.com/api/status_img?ip=frp-oak.com&port=55907&stype=je&theme=simple" style="zoom:65%;" />
 
 ---
 
