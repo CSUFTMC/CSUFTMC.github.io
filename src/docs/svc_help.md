@@ -1,0 +1,43 @@
+---
+title: 语音Mod安装教程
+icon: object-group
+order: 5
+
+---
+
+## 🎤 语音 Mod 安装教程
+
+为了能在游戏里直接语音交流，请按照以下步骤安装 **Simple Voice Chat**。
+
+### 第一步：下载 Mod 文件
+
+1、搜索“简单的语音聊天”
+
+<img src="C:\Users\Kanbara\Code\vscode\Vue\CSUFTMC\src\docs\svc_help.assets\image-20251219152807827.png" alt="image-20251219152807827" style="zoom: 33%;" />
+
+2、选择合适的版本。这里以fabric1.20.10为例
+
+<img src="C:\Users\Kanbara\Code\vscode\Vue\CSUFTMC\src\docs\svc_help.assets\image-20251219153052187.png" alt="image-20251219153052187" style="zoom: 33%;" />
+
+3、点击保存
+
+<img src="C:\Users\Kanbara\Code\vscode\Vue\CSUFTMC\src\docs\svc_help.assets\image-20251219153233556.png" alt="image-20251219153233556" style="zoom: 33%;" />
+
+### 第二步：进入游戏并测试
+
+1. 启动游戏并连接服务器。
+2. **检查图标**：进入游戏后，观察左下角。
+   - **红色插头图标**：说明 Mod 已加载，但尚未连接到语音服务器。（请在群内咨询）
+   - **没有图标或是麦克风图标**：恭喜！连接成功。
+3. **按键操作**：
+   - **按 `V` 键**：打开语音设置菜单（可以调节麦克风、音量等）。
+   - **按 `M` 键**：快速静音自己。（注意可能的按键冲突）
+   - **按 `H` 键**：开启/关闭隐藏语音 UI。
+
+------
+
+### 💡 常见问题排查
+
+- **听不见别人说话/别人听不见我**：按 `V` 键 -> `Settings` (设置) -> 检查 `Input Device` (输入设备) 和 `Output Device` (输出设备) 是否选对了你的耳机/麦克风。
+- **一直是红色插头**：请检查你的网络是否开启了代理（如魔法上网），建议先关闭后再尝试连接。
+- **游戏崩溃**：请确认你是否安装了前置 API（通常 Fabric 需要 `Fabric API`），如果还是不行，请在群内咨询。
