@@ -13,15 +13,15 @@ order: 5
 
 1、搜索“简单的语音聊天”
 
-<img src="C:\Users\Kanbara\Code\vscode\Vue\CSUFTMC\src\docs\svc_help.assets\image-20251219152807827.png" alt="image-20251219152807827" style="zoom: 33%;" />
+<img src="svc_help.assets\image-20251219152807827.png" alt="image-20251219152807827" style="zoom: 33%;" />
 
 2、选择合适的版本。这里以fabric1.20.10为例
 
-<img src="C:\Users\Kanbara\Code\vscode\Vue\CSUFTMC\src\docs\svc_help.assets\image-20251219153052187.png" alt="image-20251219153052187" style="zoom: 33%;" />
+<img src="svc_help.assets\image-20251219153052187.png" alt="image-20251219153052187" style="zoom: 33%;" />
 
 3、点击保存
 
-<img src="C:\Users\Kanbara\Code\vscode\Vue\CSUFTMC\src\docs\svc_help.assets\image-20251219153233556.png" alt="image-20251219153233556" style="zoom: 33%;" />
+<img src="svc_help.assets\image-20251219153233556.png" alt="image-20251219153233556" style="zoom: 33%;" />
 
 ### 第二步：进入游戏并测试
 
