@@ -24,7 +24,7 @@ export default hopeTheme({
   sidebar,
 
   // 页脚
-  footer: "默认页脚",
+  footer: "除另有声明本站内容遵循 CC BY-NC-SA 4.0 许可协议",
   displayFooter: true,
 
   // 加密配置

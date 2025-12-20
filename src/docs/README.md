@@ -4,7 +4,10 @@ icon: book
 footer: false
 comment: false
 ---
-# CSUFTMC信息一览
+
+<Catalog />
+
+## CSUFTMC信息一览
 
 | 服务器版本     | Java Paper 1.21.4              | **备注**           |
 | :------------- | :----------------------------- | :----------------- |
