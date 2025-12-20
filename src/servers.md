@@ -34,7 +34,7 @@ comment: false
 
 [<img src="https://img.shields.io/badge/点此查看-安装语音Mod教程-blue?style=for-the-badge" alt="点击跳转" style="zoom:180%;" />](./docs/svc_help.md)
 
-```markdown
+:::tip
 请在确保连接顺畅的前提下按以下顺序优先使用：1、移动ipv6直连 2、湖北三网 3、宁波三网
 
 相关名词解释
@@ -42,4 +42,4 @@ comment: false
 通过第六代协议实现端到端直接通信，路径最简且延迟最低，但要求用户网络环境支持并开启 IPv6。
 2. 三网 (通用)
 利用 BGP 协议同时接入三大运营商（电信、移动、联通）骨干网，自动调度最优路径，解决跨网互联拥塞，确保不同宽带用户均能稳定连接。
-```
+:::
