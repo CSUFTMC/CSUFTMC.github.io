@@ -31,7 +31,7 @@ Java下载官方网站：
 
 PCL2：[官方下载](https://ifdian.net/p/0164034c016c11ebafcb52540025c377)（仅支持Windows）
 
-HMCL：[官方下载](https://ci.huangyuhui.net/job/HMCL/)
+HMCL：[官方下载](https://hmcl.huangyuhui.net/download/)
 
 XMCL：[官方下载](https://xmcl.app/zh/)
 
