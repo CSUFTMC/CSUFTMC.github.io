@@ -1,11 +1,17 @@
 <template>
-  <component :is="tagType" class="copy-wrapper" :class="[format, { copied: copied }]">
+  <component 
+    :is="tagType" 
+    class="copy-wrapper" 
+    :class="[format, { copied: copied }]"
+    @click="copyText"
+    :title="copied ? '复制成功' : '点击复制'"
+  >
     
     <span class="text-content">
       <slot>{{ text }}</slot>
     </span>
     
-    <button class="copy-btn" @click.stop.prevent="copyText" :title="copied ? '复制成功' : '点击复制'">
+    <button class="copy-btn">
       <svg v-if="!copied" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
       <svg v-else xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
     </button>
@@ -17,7 +23,6 @@ export default {
   name: 'CopyText',
   props: {
     text: { type: String, required: true },
-    // format 支持: 'code' (代码块), 'del' (删除线), 'bold' (加粗), 默认空 (普通)
     format: { type: String, default: '' }
   },
   data() { return { copied: false } },
@@ -26,7 +31,7 @@ export default {
       switch (this.format) {
         case 'code': return 'code';
         case 'del': return 's';
-        case 'bold': return 'strong'; // 加粗使用 strong 标签
+        case 'bold': return 'strong';
         default: return 'span';
       }
     }
@@ -52,13 +57,13 @@ export default {
   max-width: 100%;
   border-radius: 4px;
   padding: 0 4px;
-  transition: background-color 0.2s;
-  cursor: default;
+  transition: all 0.2s;
+  
+
+  cursor: pointer;
 }
 
-/* --- 样式变体 --- */
-
-/* 1. Code 模式 */
+/* 样式变体 */
 code.copy-wrapper.code {
   color: var(--c-text-accent, #c0c0c0);
   background-color: var(--c-bg-code, rgba(127, 127, 127, 0.15));
@@ -68,36 +73,40 @@ code.copy-wrapper.code {
   border-radius: 4px;
   margin: 0 2px;
 }
-code.copy-wrapper.code:hover {
-  background-color: var(--c-bg-code-hover, rgba(127, 127, 127, 0.25));
-}
 
-/* 2. Delete 模式 */
 .copy-wrapper.del {
   text-decoration: line-through;
   opacity: 0.8;
 }
 
-/* 3. Bold 模式 (新增) */
 .copy-wrapper.bold {
   font-weight: bold;
 }
 
-/* 通用悬停效果 */
-.copy-wrapper:not(.code):hover {
+/* 悬停效果：整体背景变色，提示整体是一个按钮 */
+.copy-wrapper:hover {
   background-color: rgba(128, 128, 128, 0.15);
+}
+code.copy-wrapper.code:hover {
+  background-color: var(--c-bg-code-hover, rgba(127, 127, 127, 0.25));
+}
+
+/* 悬停时文字颜色也稍微高亮一点 */
+.copy-wrapper:hover .text-content {
+  color: var(--c-brand);
 }
 
 .text-content {
   margin-right: 4px;
   color: inherit;
+  transition: color 0.2s;
 }
 
 .copy-btn {
   background: none;
   border: none;
   padding: 0;
-  cursor: pointer;
+  cursor: inherit; 
   color: currentColor; 
   opacity: 0.5;
   display: inline-flex;
@@ -105,13 +114,12 @@ code.copy-wrapper.code:hover {
   justify-content: center;
   transition: all 0.2s;
   font-size: 1.1em;
-  
-  /* 关键：防止父元素的样式污染按钮 */
-  text-decoration: none;  /* 防止删除线穿过图标 */
-  font-weight: normal;    /* 防止加粗让图标变糊 */
+  text-decoration: none;
+  font-weight: normal;
 }
 
-.copy-btn:hover {
+/* 整体悬停时，按钮也高亮 */
+.copy-wrapper:hover .copy-btn {
   opacity: 1;
   color: var(--c-brand, #3eaf7c);
   transform: scale(1.1);
