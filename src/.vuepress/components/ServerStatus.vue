@@ -120,7 +120,7 @@ export default {
           this.parsePlayers(data.players?.sample);
         } else {
           this.isOnline = false;
-          this.statusText = "服务器离线";
+          this.statusText = "服务器超时或离线，请刷新重试";
         }
         
         const now = new Date();
