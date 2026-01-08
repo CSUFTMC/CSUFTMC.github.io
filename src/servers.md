@@ -32,9 +32,19 @@ comment: false
 
 ---
 
-[<img src="https://img.shields.io/badge/点此查看-已关闭的服务器列表-red?style=for-the-badge" alt="点击跳转" style="zoom:180%;" />](./old_servers.md)
 
-[<img src="https://img.shields.io/badge/点此查看-服务器文档-blue?style=for-the-badge" alt="点击跳转" style="zoom:180%;" />](./docs/)
+
+
+<div style="display: flex; flex-wrap: wrap; gap: 0px 10px;">
+
+[<img src="https://img.shields.io/badge/点此查看-已关闭的服务器-red?style=for-the-badge" style="zoom:180%;" />](./old_servers.md)
+
+[<img src="https://img.shields.io/badge/点此查看-服务器文档-blue?style=for-the-badge" style="zoom:180%;" />](./docs/)
+
+[<img src="https://img.shields.io/badge/点此查看-捐赠倡议-darkgreen?style=for-the-badge" style="zoom:180%;" />](./docs/Donation.md)
+
+</div>
+
 
 :::tip
 请在确保连接顺畅的前提下按以下顺序优先使用：1、移动ipv6直连 2、湖北三网 3、宁波三网
