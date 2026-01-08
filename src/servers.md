@@ -20,11 +20,11 @@ comment: false
 
 **连接地址 (CSUFTMC)**
 
-| 描述                | 地址                           |
-| :------------------ | :----------------------------- |
-| 移动ipv6直连 (推荐) | `ipv6.csuftmc.dpdns.org:25565` |
-| 湖北三网(通用)      | `frp-art.com:40054`            |
-| 宁波三网(通用)      | `frp-oak.com:55907`            |
+| 描述                | 地址                                   |
+| :------------------ | :------------------------------------- |
+| 移动ipv6直连 (推荐) | `ipv6.csuftmc.dpdns.org:25565`         |
+| 湖北三网(通用)      | `frp-art.com:40054`                    |
+| 宁波三网(通用)      | ~~`frp-oak.com:55907`~~(维护至1月15日) |
 
 <img src="https://motd.minebbs.com/api/status_img?ip=frp-oak.com&port=55907&stype=je&theme=simple" style="zoom:65%;" />
 
