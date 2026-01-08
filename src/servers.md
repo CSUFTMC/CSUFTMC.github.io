@@ -26,13 +26,15 @@ comment: false
 | 湖北三网(通用)      | `frp-art.com:40054`                    |
 | 宁波三网(通用)      | ~~`frp-oak.com:55907`~~(维护至1月15日) |
 
-<img src="https://motd.minebbs.com/api/status_img?ip=frp-oak.com&port=55907&stype=je&theme=simple" style="zoom:65%;" />
+<div style="display: flex; flex-wrap: wrap;  gap: 10px;">
+  <ServerStatus host="frp-art.com:40054" inline />
+</div>
 
 ---
 
 [<img src="https://img.shields.io/badge/点此查看-已关闭的服务器列表-red?style=for-the-badge" alt="点击跳转" style="zoom:180%;" />](./old_servers.md)
 
-[<img src="https://img.shields.io/badge/点此查看-安装语音Mod教程-blue?style=for-the-badge" alt="点击跳转" style="zoom:180%;" />](./docs/svc_help.md)
+[<img src="https://img.shields.io/badge/点此查看-服务器文档-blue?style=for-the-badge" alt="点击跳转" style="zoom:180%;" />](./docs/)
 
 :::tip
 请在确保连接顺畅的前提下按以下顺序优先使用：1、移动ipv6直连 2、湖北三网 3、宁波三网
@@ -43,3 +45,8 @@ comment: false
 2. 三网 (通用)
 利用 BGP 协议同时接入三大运营商（电信、移动、联通）骨干网，自动调度最优路径，解决跨网互联拥塞，确保不同宽带用户均能稳定连接。
 :::
+
+
+<script setup>
+import ServerStatus from "@source/.vuepress/components/ServerStatus.vue";
+</script>
