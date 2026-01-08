@@ -20,19 +20,17 @@ comment: false
 
 **连接地址 (CSUFTMC)**
 
-| 描述                | 地址                                   |
-| :------------------ | :------------------------------------- |
-| 移动ipv6直连 (推荐) | `ipv6.csuftmc.dpdns.org:25565`         |
-| 湖北三网(通用)      | `frp-art.com:40054`                    |
-| 宁波三网(通用)      | ~~`frp-oak.com:55907`~~(维护至1月15日) |
+| 描述                | 地址                                                     |
+| :------------------ | :------------------------------------------------------- |
+| 移动ipv6直连 (推荐) | <CopyText text="ipv6.csuftmc.dpdns.org:25565" format="bold" />         |
+| 湖北三网(通用)      | <CopyText text="frp-art.com:40054" format="bold" />                    |
+| 宁波三网(通用)      | <CopyText text="frp-oak.com:55907" format="del" />**(维护至1月15日)** |
 
 <div style="display: flex; flex-wrap: wrap;  gap: 10px;">
   <ServerStatus host="frp-art.com:40054" inline />
 </div>
 
 ---
-
-
 
 
 <div style="display: flex; flex-wrap: wrap; gap: 0px 10px;">
@@ -56,7 +54,7 @@ comment: false
 利用 BGP 协议同时接入三大运营商（电信、移动、联通）骨干网，自动调度最优路径，解决跨网互联拥塞，确保不同宽带用户均能稳定连接。
 :::
 
-
 <script setup>
 import ServerStatus from "@source/.vuepress/components/ServerStatus.vue";
+import CopyText from "@source/.vuepress/components/CopyText.vue";
 </script>
