@@ -30,7 +30,15 @@ comment: false
 | 6    | 宁波三网(通用)         | <CopyText text="frp-oak.com:55907" format="del" />**(维护中，1月15日恢复)** |
 
 <div style="display: flex; flex-wrap: wrap;  gap: 10px;">
-  <ServerStatus host="frp-art.com:40054" inline />
+  <!-- <ServerStatus host="frp-art.com:40054" inline /> -->
+  <ServerQuery defaultHost="auto.csuftmc.dpdns.org" align="left"
+  :presets="[
+    { name: '自动三网', host: 'auto.csuftmc.dpdns.org' },
+    { name: '通用1', host: 'a.csuftmc.dpdns.org' },
+    { name: '通用2', host: 'b.csuftmc.dpdns.org' },
+    { name: '湖北三网', host: 'frp-art.com:40054' },
+    { name: '宁波三网', host: 'frp-oak.com:55907' }
+  ]" />
 </div>
 
 ---
@@ -57,7 +65,9 @@ comment: false
 利用 BGP 协议同时接入三大运营商（电信、移动、联通）骨干网，自动调度最优路径，解决跨网互联拥塞，确保不同宽带用户均能稳定连接。
 :::
 
+
 <script setup>
 import ServerStatus from "@source/.vuepress/components/ServerStatus.vue";
 import CopyText from "@source/.vuepress/components/CopyText.vue";
+import ServerQuery from "@source/.vuepress/components/ServerQuery.vue";
 </script>
