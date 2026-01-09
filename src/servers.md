@@ -31,7 +31,7 @@ comment: false
 
 <div style="display: flex; flex-wrap: wrap;  gap: 10px;">
   <!-- <ServerStatus host="frp-art.com:40054" inline /> -->
-  <ServerQuery defaultHost="auto.csuftmc.dpdns.org" align="left"
+  <ServerQuery defaultHost="csuftmc.dpdns.org" align="left"
   :presets="[
     { name: '自动三网', host: 'csuftmc.dpdns.org' },
     { name: '通用1', host: 'a.csuftmc.dpdns.org' },
