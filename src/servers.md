@@ -33,7 +33,7 @@ comment: false
   <!-- <ServerStatus host="frp-art.com:40054" inline /> -->
   <ServerQuery defaultHost="auto.csuftmc.dpdns.org" align="left"
   :presets="[
-    { name: '自动三网', host: 'auto.csuftmc.dpdns.org' },
+    { name: '自动三网', host: 'csuftmc.dpdns.org' },
     { name: '通用1', host: 'a.csuftmc.dpdns.org' },
     { name: '通用2', host: 'b.csuftmc.dpdns.org' },
     { name: '湖北三网', host: 'frp-art.com:40054' },
