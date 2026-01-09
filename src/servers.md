@@ -22,7 +22,7 @@ comment: false
 
 | #    | 描述                   | 地址(建议依次尝试选最优线路)                                 |
 | ---- | :--------------------- | :----------------------------------------------------------- |
-| 1    | **自动三网(首选推荐)** | <CopyText text="auto.csuftmc.dpdns.org" format="bold" />     |
+| 1    | **自动三网(首选推荐)** | <CopyText text="csuftmc.dpdns.org" format="bold" />     |
 | 2    | 移动ipv6(直连推荐)     | <CopyText text="ipv6.csuftmc.dpdns.org" format="bold" />     |
 | 3    | 三网通用线路1(新增)    | <CopyText text="a.csuftmc.dpdns.org" format="bold" />        |
 | 4    | 三网通用线路2(新增)    | <CopyText text="b.csuftmc.dpdns.org" format="del" />**(维护中，1月15日恢复)** |
