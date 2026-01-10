@@ -5,7 +5,7 @@
       @click="showDetails = true"
     >
       <div class="avatar-wrapper">
-        <img :src="avatarUrl" alt="Avatar" class="mc-avatar">
+        <img :src="avatarUrl" alt="Avatar" class="mc-avatar" no-view>
       </div>
       
       <div class="mc-content">
@@ -36,7 +36,7 @@
           <button class="close-btn" @click="showDetails = false">×</button>
           
           <div class="modal-header">
-            <img :src="avatarUrl" class="modal-avatar">
+            <img :src="avatarUrl" class="modal-avatar" no-view>
             <h3>{{ username }}</h3>
             <span class="role-badge" :style="roleBadgeStyle">{{ role }}</span>
           </div>

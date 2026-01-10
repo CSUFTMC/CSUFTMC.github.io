@@ -23,7 +23,7 @@
         <span class="player-label">在线玩家 ({{ serverData.players?.online || 0 }}):</span>
         <div class="avatar-list">
           <div v-for="name in playerList" :key="name" class="player-chip">
-            <img :src="`https://nmsr.nickac.dev/head/${name}`" :alt="name" @error="handleImgError">
+            <img :src="`https://nmsr.nickac.dev/head/${name}`" :alt="name" @error="handleImgError" no-view>
             <span>{{ name }}</span>
           </div>
         </div>
