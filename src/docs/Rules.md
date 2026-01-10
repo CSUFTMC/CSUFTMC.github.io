@@ -1,7 +1,7 @@
 ---
 title: 玩家守则
 icon: object-group
-order: 1
+order: 2
 
 ---
 # 服务器守则 [必读]

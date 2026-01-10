@@ -1,7 +1,7 @@
 ---
 title: 安装教程
 icon: object-group
-order: 2
+order: 3
 
 ---
 

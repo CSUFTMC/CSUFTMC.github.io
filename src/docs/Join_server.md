@@ -1,7 +1,7 @@
 ---
 title: 加入服务器
 icon: object-group
-order: 3
+order: 4
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 常用玩家指令
 icon: object-group
-order: 4
+order: 5
 
 ---
 

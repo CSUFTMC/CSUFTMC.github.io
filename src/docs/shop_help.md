@@ -1,7 +1,7 @@
 ---
 title: 商店教程
 icon: object-group
-order: 7
+order: 8
 
 ---
 

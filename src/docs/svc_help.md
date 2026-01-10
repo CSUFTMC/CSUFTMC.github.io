@@ -1,7 +1,7 @@
 ---
 title: 语音Mod安装教程
 icon: object-group
-order: 5
+order: 6
 
 ---
 

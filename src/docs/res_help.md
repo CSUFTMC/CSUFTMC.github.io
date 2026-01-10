@@ -1,7 +1,7 @@
 ---
 title: 领地插件教程
 icon: object-group
-order: 6
+order: 7
 
 ---
 
