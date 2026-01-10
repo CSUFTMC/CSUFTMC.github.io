@@ -8,7 +8,7 @@ bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
 bgImageStyle:
   background-attachment: fixed
 heroText: 🌲 CSUFTMC
-tagline: 在中南林业科技大学，我们用代码和方块构建无限可能的世界！欢迎加入我们，探索 Minecraft 的技术与乐趣！
+tagline: 我们用代码和方块构建无限可能的世界！欢迎加入我们，探索 Minecraft 的技术与乐趣！
 actions:
   - text: 加入我们
     icon: user-plus
