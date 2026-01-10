@@ -157,7 +157,7 @@ export default {
 /* --- 规格: Small --- */
 .size-small {
   border-radius: 50px;
-  padding: 4px 14px 4px 4px;
+  padding: 4px 14px 4px 10px;
   display: inline-flex;
   align-items: center;
   gap: 10px;

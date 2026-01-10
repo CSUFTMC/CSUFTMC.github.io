@@ -69,93 +69,11 @@ photoSwipe: false
 ---
 
 ### 👥近期主要玩家
-
-<McProfile 
-  username="Ceceport" 
-  join-date="2025-11-18"
-  role="Admin"
-  qq="958630146"
-  :custom-info="[
-    { label: '职位', value: '服务器管理员' },
-    { label: '状态', value: '活跃' },
-  ]"
->
-  <p>现任服主，运行和维护服务器。有任何问题欢迎QQ联系。</p>
-</McProfile>
-
-<McProfile 
-  username="Aragron_" 
-  role="Admin"
-  join-date="2025-11-18"
-  :custom-info="[
-    { label: '职位', value: '服务器管理员' },  
-    { label: '状态', value: '佛系' },
-  ]"
->
-  <p>服务器管理员兼QQ群群主。</p>
-</McProfile>
-
-<McProfile 
-  username="Declan" 
-  role="Admin"
-  join-date="2025-11-18"
-  :custom-info="[
-    { label: '职位', value: '退休干部' },  
-    { label: '状态', value: '佛系' },
-  ]"
->
-  <p>上一任服务器服主。</p>
-</McProfile>
-
-<McProfile 
-  username="ovo_Chen" 
-  join-date="2025-12-16"
-  :custom-info="[
-    { label: '状态', value: '常驻' },
-  ]"
->
-</McProfile>
-
-<McProfile 
-  username="aasdfghjkl" 
-  join-date="2025-11-18"
-  :custom-info="[
-    { label: '状态', value: '活跃' },
-  ]"
->
-</McProfile>
-
-<McProfile 
-  username="CHYALING" 
-  role="建筑师"
-  join-date="2025-11-18"
-  :custom-info="[
-    { label: '状态', value: '常驻' },
-  ]"
->
-  <p>服务器御用建筑师。</p>
-</McProfile>
-
-<McProfile 
-  username="Taoliu" 
-  join-date="2025-11-24"
-  :custom-info="[
-    { label: '状态', value: '佛系' },
-  ]"
->
-</McProfile>
-
-<McProfile 
-  username="LiUAuXe" 
-  join-date="2025-11-19"
-  :custom-info="[
-    { label: '状态', value: '佛系' },
-  ]"
->
-</McProfile>
+<PlayerList />
 
 
 <script setup>
+import PlayerList from "@source/.vuepress/components/PlayerList.vue";
 import ServerStatus from "@source/.vuepress/components/ServerStatus.vue";
 import CopyText from "@source/.vuepress/components/CopyText.vue";
 import ServerQuery from "@source/.vuepress/components/ServerQuery.vue";
