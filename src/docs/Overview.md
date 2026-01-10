@@ -2,7 +2,7 @@
 title: 信息一览
 icon: object-group
 order: 1
-
+photoSwipe: false
 ---
 
 ## CSUFTMC信息一览
