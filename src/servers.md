@@ -71,11 +71,7 @@ photoSwipe: false
 ### 👥近期主要玩家
 <PlayerList />
 
-<Rankings 
-  :servers="['起源服']" 
-  :items="['总游戏时间']" 
-  :limit="10" 
-/>
+
 
 <script setup>
 import PlayerList from "@source/.vuepress/components/PlayerList.vue";

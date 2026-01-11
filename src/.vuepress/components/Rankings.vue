@@ -8,12 +8,34 @@
     <div v-else>
       <div v-for="(boards, serverName) in filteredData" :key="serverName" class="server-group">
         <div class="server-header">
-          <div class="dot"></div>
-          <h2 class="server-title">{{ serverName }}</h2>
+          <div class="header-left">
+            <div class="dot"></div>
+            <h2 class="server-title">{{ serverName }}</h2>
+          </div>
+          <button 
+            class="scroll-toggle-btn" 
+            :class="{ 'is-active': isAutoScrolling }" 
+            @click="toggleAutoScroll"
+            :title="isAutoScrolling ? '停止自动滚动' : '开始自动滚动'"
+          >
+            <span class="scroll-icon">{{ isAutoScrolling ? 'Ⅱ' : '▶' }}</span>
+            <span class="scroll-text">{{ isAutoScrolling ? '正在滚动' : '开始滚动' }}</span>
+          </button>
         </div>
 
-        <div class="boards-container">
-          <div v-for="board in boards" :key="board.name" class="rank-card">
+        <div 
+          class="boards-container" 
+          ref="scrollContainer"
+          @wheel="handleWheel"
+          @mouseenter="isHovering = true"
+          @mouseleave="isHovering = false"
+        >
+          <div 
+            v-for="board in boards" 
+            :key="board.name" 
+            class="rank-card"
+            @click.capture="scrollToCenter" 
+          >
             <h3 class="rank-category-title">{{ board.name }}</h3>
             <div class="player-list">
               <div 
@@ -43,28 +65,15 @@
       :show-details="showProfileModal"
       @update:showDetails="showProfileModal = $event"
       :player-profile="selectedPlayer"
-    >
-      <div class="achievement-box">
-        <h3>上榜成就一览 ({{ playerAchievements.length }} 项)</h3>
-        <ul class="achievement-list" v-if="playerAchievements.length > 0">
-          <li v-for="item in playerAchievements" :key="item.serverName + item.boardName">
-            在 <span class="serv-name">{{ item.serverName }}</span> 的 <span class="board-name">{{ item.boardName }}</span> 榜单中，排名第 <span class="a-rank">#{{ item.rank }}</span>，数值 <span class="a-value">{{ item.value }} {{ item.unit }}</span>
-          </li>
-        </ul>
-        <p v-else class="no-achieve-tip">该玩家暂无上榜记录。</p>
-      </div>
-    </McProfile>
+    />
   </div>
 </template>
 
 <script>
-import players from '../data/players.js'; // 使用默认导出的扁平化玩家对象
 import McProfile from './McProfile.vue';
 
-// 后期可在此配置希望在卡片中展示的项目
-const ACHIEVEMENT_WHITELIST = ['总游戏时间', '死亡次数', '输出伤害','承受伤害','杀死僵尸的数量','杀死小白的数量'];
-
 export default {
+  name: 'Rankings',
   components: { McProfile },
   props: {
     servers: { type: Array, default: () => [] },
@@ -76,9 +85,13 @@ export default {
       rankData: {},
       lastUpdated: '',
       loading: true,
-      selectedPlayer: {},        // 当前选中的玩家基础数据 (传递给 McProfile)
-      playerAchievements: [],    // 当前选中的玩家上榜数据 (通过 slot 传递)
-      showProfileModal: false    // 控制 McProfile Modal 状态
+      selectedPlayer: null,      
+      showProfileModal: false,
+      // 滚动逻辑相关
+      isAutoScrolling: false, //默认关闭
+      // isAutoScrolling: true,
+      isHovering: false,
+      scrollTimer: null
     }
   },
   computed: {
@@ -97,47 +110,46 @@ export default {
     }
   },
   methods: {
-    handleClickPlayer(username) {
-      // 1. 身份匹配：检索玩家基础信息
-      // 优先从 players.js 获取，否则创建默认档案
-      const baseInfo = players[username] || {
-        username: username,
-        role: '玩家',
-        joinDate: '未知',
-        qq: '未登记'
-      };
+    // 开启自动滚动逻辑
+    startAutoScroll() {
+      if (this.scrollTimer) return;
+      this.scrollTimer = setInterval(() => {
+        // 只有在开启状态且鼠标未悬停时才滚动
+        if (this.isAutoScrolling && !this.isHovering && this.$refs.scrollContainer) {
+          const containers = Array.isArray(this.$refs.scrollContainer) 
+            ? this.$refs.scrollContainer 
+            : [this.$refs.scrollContainer];
 
-      // 2. 成就扫描 (横向扫描所有服务器)
-      const achievements = [];
-      Object.entries(this.rankData).forEach(([serverName, boards]) => {
-        boards.forEach(board => {
-          // 仅抓取白名单项目
-          if (ACHIEVEMENT_WHITELIST.includes(board.name)) {
-            // 查找玩家是否上榜
-            const rankEntry = board.leaderboard.find(row => row[1] === username); // row[1] 是 username
-
-            if (rankEntry) {
-              const rank = board.leaderboard.findIndex(row => row[1] === username) + 1;
-              const value = rankEntry[2]; // rankEntry[2] 是值
-              
-              // 假设 board 对象上包含 unit 字段，若无则默认为 '次' 或 '个'
-              const unit = board.unit || (board.name === '总游戏时间' ? '小时' : '次/个');
-
-              achievements.push({
-                serverName: serverName,
-                boardName: board.name,
-                rank: rank,
-                value: value,
-                unit: unit
-              });
+          containers.forEach(el => {
+            const maxScroll = el.scrollWidth - el.clientWidth;
+            if (el.scrollLeft >= maxScroll - 1) {
+              el.scrollTo({ left: 0, behavior: 'smooth' }); // 回到开头
+            } else {
+              el.scrollBy({ left: 200, behavior: 'smooth' }); // 每次滚动 200px
             }
-          }
-        });
+          });
+        }
+      }, 3000); // 间隔 3 秒移动一次
+    },
+    toggleAutoScroll() {
+      this.isAutoScrolling = !this.isAutoScrolling;
+    },
+    scrollToCenter(event) {
+      event.currentTarget.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'center'
       });
-
-      // 3. 赋值并打开弹窗
-      this.selectedPlayer = baseInfo;
-      this.playerAchievements = achievements;
+    },
+    handleWheel(event) {
+      if (event.deltaY !== 0) {
+        event.preventDefault();
+        const speedFactor = 3;  //鼠标灵敏度
+        event.currentTarget.scrollLeft += event.deltaY * speedFactor;
+      }
+    },
+    handleClickPlayer(username) {
+      this.selectedPlayer = { username: username };
       this.showProfileModal = true;
     }
   },
@@ -148,24 +160,69 @@ export default {
         this.rankData = json.data;
         this.lastUpdated = json.last_updated;
         this.loading = false;
+        // 初始化完成后开始滚动
+        this.$nextTick(() => {
+          this.startAutoScroll();
+        });
       });
+  },
+  beforeUnmount() {
+    // 销毁组件时清除定时器
+    if (this.scrollTimer) clearInterval(this.scrollTimer);
   }
 }
 </script>
 
 <style scoped>
-/* --- 沿用之前的 Rankings 样式 --- */
 .rankings-wrapper { margin: 2rem 0; color: var(--c-text); }
+.loading-box { display: flex; align-items: center; gap: 10px; padding: 20px; }
 .server-group { margin-bottom: 3rem; }
-.server-header { display: flex; align-items: center; margin-bottom: 1.5rem; }
+
+/* 标题栏布局 */
+.server-header { 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  margin-bottom: 1.5rem; 
+}
+.header-left { display: flex; align-items: center; }
+
 .dot { width: 10px; height: 10px; background: #10b981; border-radius: 50%; margin-right: 12px; box-shadow: 0 0 10px #10b981; }
 .server-title { margin: 0; border: none; font-size: 1.6rem; font-weight: 700; }
-.boards-container {
-  display: flex; /* 改为 flex 布局实现水平滑动 */
-  gap: 1.5rem;
-  overflow-x: auto; /* 核心：启用水平滑动条 */
-  padding-bottom: 10px; /* 为滑动条留出空间 */
+
+/* 滚动按钮样式 */
+.scroll-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: rgba(112, 112, 112, 0.1);
+  border: 1px solid rgba(112, 112, 112, 0.2);
+  border-radius: 20px;
+  color: var(--c-text);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
+.scroll-toggle-btn.is-active {
+  background: rgba(16, 185, 129, 0.15);
+  border-color: #10b981;
+  color: #10b981;
+}
+.scroll-toggle-btn:hover { background: rgba(112, 112, 112, 0.2); }
+.scroll-icon { font-size: 0.7rem; font-weight: bold; }
+
+.boards-container {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding: 10px 5px 20px 5px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.boards-container::-webkit-scrollbar { display: none; }
+
 .rank-card {
   background: rgba(150, 150, 150, 0.1);
   backdrop-filter: blur(12px);
@@ -173,61 +230,28 @@ export default {
   border-radius: 12px;
   padding: 1.2rem;
   transition: all 0.3s ease;
-  min-width: 320px; /* 确保卡片在滑动时保持最小宽度 */
+  width: 300px;
+  flex-shrink: 0;
 }
 .rank-card:hover { transform: translateY(-4px); border-color: var(--c-brand); }
 .rank-category-title { margin: 0 0 1rem 0; font-size: 1.1rem; border-bottom: 1px solid rgba(112, 112, 112, 0.1); }
-.player-row { display: flex; justify-content: space-between; align-items: center; padding: 0.6rem 0.8rem; border-radius: 8px; cursor: pointer; }
+
+.player-row { display: flex; justify-content: space-between; align-items: flex-start; padding: 0.6rem 0.8rem; border-radius: 8px; cursor: pointer; }
 .player-row:hover { background: rgba(62, 175, 124, 0.1); }
-.player-main { display: flex; align-items: center; gap: 12px; }
-.rank-index { font-family: monospace; opacity: 0.4; width: 1.2rem; }
+
+.player-main { display: flex; align-items: flex-start; gap: 12px; flex: 1; }
+.player-name { 
+  font-size: 0.95rem; font-weight: 500; word-break: break-all;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.2;
+}
+
+.rank-index { font-family: monospace; opacity: 0.4; width: 1.2rem; flex-shrink: 0; }
 .top-three { opacity: 1; color: var(--c-brand); }
-.player-avatar { width: 24px; height: 24px; border-radius: 4px; }
-.player-name { font-size: 0.95rem; font-weight: 500; }
+.player-avatar { width: 24px; height: 24px; border-radius: 4px; flex-shrink: 0; }
+.player-stats { margin-left: 10px; flex-shrink: 0; padding-top: 2px; }
 .stat-value { font-family: monospace; font-weight: 600; color: var(--c-text-quote); }
 
-/* --- 新增：成就弹窗内部样式 --- */
-.achievement-box {
-  margin-top: 15px;
-  text-align: left;
-}
-.achievement-box h3 {
-  font-size: 1.1rem;
-  margin-bottom: 15px;
-  border-bottom: 1px dashed rgba(255,255,255,0.2);
-  padding-bottom: 5px;
-}
-.achievement-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  max-height: 180px; /* 限制高度，大约 3-4 个 li 元素的高度 */
-  overflow-y: auto; /* 启用垂直滚动条 */
-}
-.achievement-list li {
-  background: rgba(255, 255, 255, 0.05);
-  border-left: 3px solid var(--c-brand);
-  padding: 8px 12px;
-  margin-bottom: 8px;
-  border-radius: 4px;
-  font-size: 0.9em;
-}
-.serv-name, .board-name {
-  font-weight: 600;
-  color: #3eaf7c; /* 使用 VuePress 默认品牌色 */
-}
-.a-rank {
-  color: #e67e22;
-  font-weight: 800;
-  font-family: monospace;
-}
-.a-value {
-  font-family: monospace;
-  font-weight: 700;
-}
-.no-achieve-tip {
-  opacity: 0.6;
-  font-style: italic;
-  text-align: center;
-}
+.update-footer { margin-top: -40px; font-size: 1rem; opacity: 0.5; text-align: right; }
+
+:deep(.mc-card-trigger) { display: none !important; }
 </style>

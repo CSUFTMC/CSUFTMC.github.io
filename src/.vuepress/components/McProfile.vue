@@ -3,7 +3,7 @@
     <div 
       v-if="!isExternalMode"
       :class="['mc-card-trigger', `size-${size}`]" 
-      @click="innerShow = true"
+      @click="openModal"
     >
       <div class="avatar-wrapper">
         <img :src="avatarUrl" alt="Avatar" class="mc-avatar" no-view>
@@ -57,7 +57,21 @@
             </div>
 
             <div v-if="profile.desc" class="desc-section">
-               <p class="desc-text">{{ profile.desc }}</p>
+                <p class="desc-text">{{ profile.desc }}</p>
+            </div>
+
+            <div class="achievement-box">
+              <h3>上榜成就一览 ({{ achievements.length }})</h3>
+              <div v-if="loadingRank" class="loading-rank">正在同步数据...</div>
+              <ul class="achievement-list" v-else-if="achievements.length > 0">
+                <li v-for="item in achievements" :key="item.serverName + item.boardName">
+                  在 <span class="serv-name">{{ item.serverName }}</span> 的 
+                  <span class="board-name">{{ item.boardName }}</span> 中排名 
+                  <span class="a-rank">#{{ item.rank }}</span>，总计
+                  <span class="a-value">{{ item.value }}</span>
+                </li>
+              </ul>
+              <p v-else class="no-achieve-tip">该玩家暂无上榜记录。</p>
             </div>
             
             <div class="slot-area" v-if="$slots.default">
@@ -73,12 +87,14 @@
 <script>
 import players from '../data/players.js';
 
+const SCAN_WHITELIST = ['总游戏时间', '死亡次数', '输出伤害', '承受伤害', '杀死僵尸的数量', '杀死小白的数量'];
+
 export default {
   name: 'McProfile',
   props: {
     username: { type: String, default: '' },
-    playerProfile: { type: Object, default: null }, // 排行榜模式传参
-    showDetails: { type: Boolean, default: false }, // 排行榜模式控制
+    playerProfile: { type: Object, default: null },
+    showDetails: { type: Boolean, default: false },
     size: { 
       type: String, 
       default: 'medium',
@@ -86,16 +102,16 @@ export default {
     }
   },
   data() {
-    return { innerShow: false };
+    return { 
+      innerShow: false,
+      achievements: [],
+      loadingRank: false,
+      rankData: null
+    };
   },
   computed: {
-    // 判断是否为排行榜这种“外部控制”模式
-    isExternalMode() {
-      return !!this.playerProfile;
-    },
-    isVisible() {
-      return this.isExternalMode ? this.showDetails : this.innerShow;
-    },
+    isExternalMode() { return !!this.playerProfile; },
+    isVisible() { return this.isExternalMode ? this.showDetails : this.innerShow; },
     profile() {
       const name = this.isExternalMode ? this.playerProfile.username : this.username;
       const staticData = players[name] || {};
@@ -116,7 +132,46 @@ export default {
       return { background: 'rgba(14, 165, 233, 0.9)' };
     }
   },
+  watch: {
+    isVisible(val) {
+      if (val) this.fetchAndScanRank();
+    }
+  },
   methods: {
+    async fetchAndScanRank() {
+      if (!this.profile.username) return;
+      this.loadingRank = true;
+      try {
+        if (!this.rankData) {
+          const res = await fetch('/data/rank.json');
+          const json = await res.json();
+          this.rankData = json.data;
+        }
+        
+        const results = [];
+        Object.entries(this.rankData).forEach(([server, boards]) => {
+          boards.forEach(board => {
+            if (SCAN_WHITELIST.includes(board.name)) {
+              const rankIndex = board.leaderboard.findIndex(row => row[1] === this.profile.username);
+              if (rankIndex !== -1) {
+                results.push({
+                  serverName: server,
+                  boardName: board.name,
+                  rank: rankIndex + 1,
+                  value: board.leaderboard[rankIndex][2]
+                });
+              }
+            }
+          });
+        });
+        this.achievements = results;
+      } catch (e) {
+        console.error("Rank scanning failed:", e);
+      } finally {
+        this.loadingRank = false;
+      }
+    },
+    openModal() { this.innerShow = true; },
     closeModal() {
       this.innerShow = false;
       this.$emit('update:showDetails', false);
@@ -131,10 +186,7 @@ export default {
 </script>
 
 <style scoped>
-/* 包含您提供的所有原始样式 */
-.mc-profile-outer { display: inline-block; vertical-align: top; }
-
-/* --- 卡片样式 --- */
+/* --- 样式部分保持不变 --- */
 .mc-card-trigger {
   background: rgba(140, 140, 140, 0.1);
   border: 1px solid rgba(140, 140, 140, 0.25);
@@ -144,7 +196,7 @@ export default {
   overflow: hidden;
   color: inherit;
 }
-.mc-card-trigger:hover { transform: translateY(-4px); border-color: rgba(62, 175, 124, 0.5); }
+.mc-card-trigger:hover { transform: translateY(-4px); border-color: rgba(62, 175, 124, 0.5); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
 
 .size-small { border-radius: 50px; padding: 4px 14px 4px 10px; display: inline-flex; align-items: center; gap: 10px; }
 .size-small .mc-avatar { width: 28px; height: 28px; border-radius: 50%; }
@@ -155,34 +207,64 @@ export default {
 .size-large { border-radius: 16px; width: 260px; padding: 24px; display: flex; flex-direction: column; align-items: center; }
 .size-large .mc-avatar { width: 72px; height: 72px; border-radius: 14px; margin-bottom: 16px; }
 
-/* --- 弹窗样式 --- */
 .mc-modal-overlay {
   position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0); backdrop-filter: blur(10px);
   z-index: 2000; display: flex; align-items: center; justify-content: center;
 }
 .mc-modal-card {
   background: rgba(40, 40, 45, 0.98); color: #fff;
-  width: 90%; max-width: 360px; border-radius: 16px; padding: 24px; position: relative;
+  width: 90%; max-width: 420px; border-radius: 16px; padding: 24px; position: relative;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
-.close-btn { position: absolute; top: 12px; right: 12px; background: none; border: none; font-size: 20px; color: #fff; cursor: pointer; }
+.close-btn { position: absolute; top: 12px; right: 12px; background: none; border: none; font-size: 24px; color: rgba(255,255,255,0.6); cursor: pointer; }
+.close-btn:hover { color: #fff; }
 
 .modal-header { text-align: center; margin-bottom: 20px; }
-.modal-avatar { width: 80px; height: 80px; border-radius: 16px; }
-.role-badge { color: white; font-size: 0.75rem; padding: 3px 10px; border-radius: 4px; font-weight: 600; display: inline-block; margin-top: 10px; }
+.modal-avatar { width: 80px; height: 80px; border-radius: 16px; margin-bottom: 10px; border: 2px solid rgba(255,255,255,0.1); }
+.role-badge { color: white; font-size: 0.75rem; padding: 3px 10px; border-radius: 4px; font-weight: 600; display: inline-block; }
 
 .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .grid-item { background: rgba(255, 255, 255, 0.08); padding: 10px; border-radius: 8px; display: flex; flex-direction: column; }
-.grid-item small { opacity: 0.6; font-size: 0.75rem; }
+.grid-item small { opacity: 0.6; font-size: 0.75rem; margin-bottom: 2px; }
 
-.desc-section { margin-top: 15px; padding-left: 10px; border-left: 3px solid #3eaf7c; font-style: italic; opacity: 0.9; }
+.desc-section { margin-top: 15px; padding: 10px; background: rgba(62, 175, 124, 0.1); border-left: 3px solid #3eaf7c; border-radius: 10px; font-style: italic; }
+
+.achievement-box { margin-top: 20px; }
+.achievement-box h3 { font-size: 1rem; margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px; }
+
+.achievement-list { 
+  list-style: none; padding: 0; margin: 0; 
+  max-height: 220px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+.achievement-list::-webkit-scrollbar { width: 5px; }
+.achievement-list::-webkit-scrollbar-thumb { background: rgba(62, 175, 124, 0.5); border-radius: 10px; }
+
+.achievement-list li { 
+  background: rgba(255,255,255,0.05); margin-bottom: 8px; padding: 10px 12px; 
+  border-radius: 6px; font-size: 0.88rem; line-height: 1.5;
+  border-left: 3px solid #3eaf7c;
+}
+
+.serv-name { color: #3eaf7c; font-weight: bold; }
+.board-name { color: #5fb1fe; font-weight: 500; }
+.a-rank { color: #e67e22; font-weight: bold; font-family: monospace; }
+.a-value { font-weight: bold; color: #fff; margin-left: 4px; }
+
+.no-achieve-tip { opacity: 0.5; font-size: 0.85rem; text-align: center; padding: 10px; }
+.loading-rank { text-align: center; padding: 20px; font-size: 0.9rem; opacity: 0.7; }
+
 .slot-area { border-top: 1px dashed rgba(255, 255, 255, 0.2); margin-top: 15px; padding-top: 15px; }
 
-/* 动画 */
-.fade-pop-enter-active, .fade-pop-leave-active { transition: all 0.2s ease; }
-.fade-pop-enter-from, .fade-pop-leave-to { opacity: 0; transform: scale(0.95); }
+.fade-pop-enter-active, .fade-pop-leave-active { transition: all 0.25s ease; }
+.fade-pop-enter-from, .fade-pop-leave-to { opacity: 0; transform: scale(0.9); }
 
-/* 链接样式穿透 */
-:deep(.mc-link) { color: #3eaf7c; text-decoration: none; }
+:deep(.mc-link) { color: #3eaf7c; text-decoration: none; font-weight: 500; }
 :deep(.mc-link:hover) { text-decoration: underline; }
+.desc-section p {
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+}
 </style>
