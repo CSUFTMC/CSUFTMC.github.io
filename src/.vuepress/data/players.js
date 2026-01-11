@@ -56,3 +56,15 @@ export const playerGroups = {
     }
   ]
 };
+
+const allPlayers = [
+  ...playerGroups.management,
+  ...playerGroups.members
+];
+
+export const players = allPlayers.reduce((acc, player) => {
+  acc[player.username] = player;
+  return acc;
+}, {});
+
+export default players;
