@@ -1,7 +1,7 @@
 ---
 title: 排行榜
 icon: server
-
+photoSwipe: false
 order: 200
 home: true
 heroText: false
