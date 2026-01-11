@@ -214,7 +214,7 @@ export default {
 }
 .mc-modal-card {
   background: rgba(40, 40, 45, 0.98); color: #fff;
-  width: 90%; max-width: 420px; border-radius: 16px; padding: 24px; position: relative;
+  width: 80%; max-width: 450px; border-radius: 16px; padding: 24px; position: relative;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 .close-btn { position: absolute; top: 12px; right: 12px; background: none; border: none; font-size: 24px; color: rgba(255,255,255,0.6); cursor: pointer; }

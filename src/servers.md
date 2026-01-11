@@ -47,12 +47,15 @@ photoSwipe: false
 
 <div style="display: flex; flex-wrap: wrap; gap: 0px 10px;">
 
-[<img src="https://img.shields.io/badge/点此查看-已关闭的服务器-red?style=for-the-badge" style="zoom:180%;" />](./old_servers.md)
 
-[<img src="https://img.shields.io/badge/点此查看-服务器文档-blue?style=for-the-badge" style="zoom:180%;" />](./docs/)
+[<img src="https://img.shields.io/badge/点此查看-文档-blue?style=for-the-badge" style="zoom:180%;" />](./docs/)
+
+
+[<img src="https://img.shields.io/badge/点此查看-排行榜-purple?style=for-the-badge" style="zoom:180%;" />](./Rankings.md)
 
 [<img src="https://img.shields.io/badge/点此查看-捐赠倡议-darkgreen?style=for-the-badge" style="zoom:180%;" />](./docs/Donation.md)
 
+[<img src="https://img.shields.io/badge/点此查看-已关闭的服务器-red?style=for-the-badge" style="zoom:180%;" />](./old_servers.md)
 </div>
 
 

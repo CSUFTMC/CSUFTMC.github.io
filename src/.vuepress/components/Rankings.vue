@@ -58,7 +58,7 @@
         </div>
       </div>
 
-      <div class="update-footer">(每30分钟更新一次)最后更新于: {{ lastUpdated }}</div>
+      <div class="update-footer">(每30分钟更新一次) 最后更新于: {{ lastUpdated }}</div>
     </div>
 
     <McProfile
@@ -144,7 +144,7 @@ export default {
     handleWheel(event) {
       if (event.deltaY !== 0) {
         event.preventDefault();
-        const speedFactor = 3;  //鼠标灵敏度
+        const speedFactor = 5;  //鼠标灵敏度
         event.currentTarget.scrollLeft += event.deltaY * speedFactor;
       }
     },
