@@ -221,7 +221,7 @@ export default {
 .close-btn:hover { color: #fff; }
 
 .modal-header { text-align: center; margin-bottom: 20px; }
-.modal-avatar { width: 80px; height: 80px; border-radius: 16px; margin-bottom: 10px; border: 2px solid rgba(255,255,255,0.1); }
+.modal-avatar { width: 80px; height: 80px; }
 .role-badge { color: white; font-size: 0.75rem; padding: 3px 10px; border-radius: 4px; font-weight: 600; display: inline-block; }
 
 .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
@@ -267,4 +267,5 @@ export default {
   margin-top: 2px !important;
   margin-bottom: 2px !important;
 }
+.modal-header h3 { margin-top: 3px; margin-bottom: 8px; color: white;}
 </style>
