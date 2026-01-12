@@ -269,7 +269,7 @@ export default {
 }
 .modal-header h3 { margin-top: 3px; margin-bottom: 8px; color: white;}
 
-@media (max-width: 413px) {
+@media (max-width: 410px) {
   .mc-profile-outer {
     display: block;
     width: 100%;
