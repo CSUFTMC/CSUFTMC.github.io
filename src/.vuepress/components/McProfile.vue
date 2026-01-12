@@ -268,4 +268,21 @@ export default {
   margin-bottom: 2px !important;
 }
 .modal-header h3 { margin-top: 3px; margin-bottom: 8px; color: white;}
+
+@media (max-width: 413px) {
+  .mc-profile-outer {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px; 
+  }
+
+  /* 2. 针对 medium 和 large 尺寸应用自动边距
+     display: flex 的元素本身是块级容器，配合固定宽度 + margin: auto 现居中
+  */
+  .size-medium, 
+  .size-large {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 </style>
