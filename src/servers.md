@@ -30,8 +30,8 @@ photoSwipe: false
 | 3    | 湖北三网               | <CopyText text="frp-tag.com:59465" format="bold" />      |
 | 4    | 宁波三网               | <CopyText text="frp-sun.com:23145" format="bold" />      |
 | 5    | 山东三网               | <CopyText text="frp-ten.com:46032" format="bold" />      |
-| 6    | 宁波三网               | <CopyText text="frp-oak.com:55907" format="bold" />      |
-| 7    | 枣庄三网               | <CopyText text="frp-art.com:40054" format="bold" />      |
+| 6    | 宁波三网(备用)         | <CopyText text="frp-oak.com:55907" format="bold" />      |
+| 7    | 山东三网(备用)         | <CopyText text="frp-art.com:40054" format="bold" />      |
 
   <DecisionGuide 
   size="small"
