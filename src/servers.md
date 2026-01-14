@@ -46,7 +46,6 @@ photoSwipe: false
   <ServerQuery defaultHost="csuftmc.dpdns.org" align="left"
   :presets="[
     { name: '自动选择', host: 'csuftmc.dpdns.org' },
-    { name: '移动ipv6', host: 'ipv6.csuftmc.dpdns.org' },
     { name: '湖北三网', host: 'frp-tag.com:59465' },
     { name: '宁波三网', host: 'frp-sun.com:23145' },
     { name: '山东三网', host: 'frp-ten.com:46032' },
