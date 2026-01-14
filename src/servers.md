@@ -49,8 +49,8 @@ photoSwipe: false
     { name: '湖北三网', host: 'frp-tag.com:59465' },
     { name: '宁波三网', host: 'frp-sun.com:23145' },
     { name: '山东三网', host: 'frp-ten.com:46032' },
-    { name: '宁波三网', host: 'frp-oak.com:55907' },
-    { name: '枣庄三网', host: 'frp-art.com:40054' }
+    { name: '宁波三网(备用)', host: 'frp-oak.com:55907' },
+    { name: '山东三网(备用)', host: 'frp-art.com:40054' }
   ]" />
 </div>
 
