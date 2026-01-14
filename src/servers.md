@@ -19,26 +19,39 @@ photoSwipe: false
 
 **生存服已于2025年12月18日迁移到此服**
 
-**连接地址 (CSUFTMC)**
+**连接地址 (CSUFTMC)** 
 
-| #    | 描述                   | 地址(建议依次尝试选最优线路)                                 |
-| ---- | :--------------------- | :----------------------------------------------------------- |
-| 1    | **自动三网(首选推荐)** | <CopyText text="csuftmc.dpdns.org" format="bold" />     |
-| 2    | 移动ipv6(直连推荐)     | <CopyText text="ipv6.csuftmc.dpdns.org" format="bold" />     |
-| 3    | 三网通用线路1(新增)    | <CopyText text="a.csuftmc.dpdns.org" format="bold" />        |
-| 4    | 三网通用线路2(新增)    | <CopyText text="b.csuftmc.dpdns.org" format="del" />**(维护中，1月15日恢复)** |
-| 5    | 湖北三网(通用)         | <CopyText text="frp-art.com:40054" format="bold" />          |
-| 6    | 宁波三网(通用)         | <CopyText text="frp-oak.com:55907" format="del" />**(维护中，1月15日恢复)** |
+
+
+| #    | 描述                   | 地址(建议依次尝试选最优线路)                             |
+| ---- | :--------------------- | :------------------------------------------------------- |
+| 1    | **自动选择(首选推荐)** | <CopyText text="csuftmc.dpdns.org" format="bold" />      |
+| 2    | 移动ipv6(直连推荐)     | <CopyText text="ipv6.csuftmc.dpdns.org" format="bold" /> |
+| 3    | 湖北三网               | <CopyText text="frp-tag.com:59465" format="bold" />      |
+| 4    | 宁波三网               | <CopyText text="frp-sun.com:23145" format="bold" />      |
+| 5    | 山东三网               | <CopyText text="frp-ten.com:46032" format="bold" />      |
+| 6    | 宁波三网               | <CopyText text="frp-oak.com:55907" format="bold" />      |
+| 7    | 枣庄三网               | <CopyText text="frp-art.com:40054" format="bold" />      |
+
+  <DecisionGuide 
+  size="small"
+  treeId="serverSelection" 
+  title="节点选择助手" 
+  subtitle="为你分配最快的服务器" 
+  icon="🚀" 
+/>
 
 <div style="display: flex; flex-wrap: wrap;  gap: 10px;">
   <!-- <ServerStatus host="frp-art.com:40054" inline /> -->
   <ServerQuery defaultHost="csuftmc.dpdns.org" align="left"
   :presets="[
-    { name: '自动三网', host: 'csuftmc.dpdns.org' },
-    { name: '通用1', host: 'a.csuftmc.dpdns.org' },
-    { name: '通用2', host: 'b.csuftmc.dpdns.org' },
-    { name: '湖北三网', host: 'frp-art.com:40054' },
-    { name: '宁波三网', host: 'frp-oak.com:55907' }
+    { name: '自动选择', host: 'csuftmc.dpdns.org' },
+    { name: '移动ipv6', host: 'ipv6.csuftmc.dpdns.org' },
+    { name: '湖北三网', host: 'frp-tag.com:59465' },
+    { name: '宁波三网', host: 'frp-sun.com:23145' },
+    { name: '山东三网', host: 'frp-ten.com:46032' },
+    { name: '宁波三网', host: 'frp-oak.com:55907' },
+    { name: '枣庄三网', host: 'frp-art.com:40054' }
   ]" />
 </div>
 
@@ -83,4 +96,5 @@ import CopyText from "@source/.vuepress/components/CopyText.vue";
 import ServerQuery from "@source/.vuepress/components/ServerQuery.vue";
 import McProfile from "@source/.vuepress/components/McProfile.vue";
 import Rankings from "@source/.vuepress/components/Rankings.vue";
+import DecisionGuide from "@source/.vuepress/components/DecisionGuide.vue";
 </script>
