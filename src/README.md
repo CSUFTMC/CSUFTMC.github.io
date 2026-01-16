@@ -30,7 +30,7 @@ config:
       chip: "服务器"
       chipClass: "green"
       img: "/assets/image/a01.webp"
-      link: "./servers.md"
+      link: "https://www.csuftmc.dpdns.org/servers.html"
 
     - type: medium
       title: "绿洲世界"
@@ -117,7 +117,7 @@ config:
   # 4. 常见问题 (FAQ)
   faq:
     - q: "如何加入服务器？"
-      a: "只需简单三步：<br>1. 前往<a href='./servers.md' target='_blank'  rel='noopener noreferrer'>服务器列表</a>复制服务器地址；<br>2. 在 Minecraft 客户端点击「多人游戏」-「添加服务器」；<br>3. 填入地址并保存，点击进入即可开启旅程。初次进入请记得查看群公告完成绑定。"
+      a: "只需简单三步：<br>1. 前往<a href='https://www.csuftmc.dpdns.org/servers.html' target='_blank'  rel='noopener noreferrer'>服务器列表</a>复制服务器地址；<br>2. 在 Minecraft 客户端点击「多人游戏」-「添加服务器」；<br>3. 填入地址并保存，点击进入即可开启旅程。初次进入请记得查看群公告完成绑定。"
       open: true
     - q: "对客户端版本有要求吗？"
       a: "原生支持 Java 1.21.10，同时兼容Java 1.18-1.21.10。"
@@ -126,7 +126,7 @@ config:
     - q: "我必须是社团成员或本校学生吗？"
       a: "完全不必。我们欢迎任何同好加入我们。是否加入社团取决于你的选择。但无论如何我们都欢迎你随时一起玩。" 
     - q: "我可以为社团工作做贡献吗？"
-      a: "当然。我们非常期待有才华、有热情的伙伴加入建设。无论是技术支持、建筑创作还是资金赞助，我们都由衷感谢。请 <a href='./docs/Overview.md'  target='_blank'  rel='noopener noreferrer'>点击此处查看负责人</a>或<a href='./docs/Donation.md'  target='_blank'  rel='noopener noreferrer'>点击此处查看贡献指南</a>。"            
+      a: "当然。我们非常期待有才华、有热情的伙伴加入建设。无论是技术支持、建筑创作还是资金赞助，我们都由衷感谢。请 <a href='https://www.csuftmc.dpdns.org/docs/Overview.html'  target='_blank'  rel='noopener noreferrer'>点击此处查看负责人</a>或<a href='https://www.csuftmc.dpdns.org/docs/Donation.html'  target='_blank'  rel='noopener noreferrer'>点击此处查看贡献指南</a>。"            
   
   # 5. 贡献者 (Contributors) - 修改为简单的用户名列表
   # 直接在这里添加名字，下方的 PlayerList 组件会自动读取并展示
@@ -142,11 +142,11 @@ config:
     about: "中南林 Minecraft 爱好者组织。不删档、不换周目，不肝不氪的纯生存养老服务器，支持离线登录。"
     links:
       - text: "服务器列表"
-        url: "./servers.md"
+        url: "https://www.csuftmc.dpdns.org/servers.html"
       - text: "安装教程"
-        url: "./docs/Installation_instructions.md"
+        url: "https://www.csuftmc.dpdns.org/docs/Installation_instructions.html"
       - text: "捐赠方式"
-        url: "./docs/Donation.md"
+        url: "https://www.csuftmc.dpdns.org/docs/Donation.html"
     contact:
       addr: "csuftmc.dpdns.org"
       douyin: "CSUFTMC"
@@ -159,7 +159,7 @@ footer: false
   <h2 class="g-title">🧭 探索与发现</h2>
   <div class="bento-grid">
     <template v-for="item in $frontmatter.config.bento">
-      <a v-if="item.link" :href="item.link" :class="['bento-item', 'bento-' + item.type]" target="_self">
+      <a v-if="item.link" :href="item.link" :class="['bento-item', 'bento-' + item.type]" target="_blank"  rel="noopener noreferrer">
         <div class="bento-content">
           <span v-if="item.chip" :class="['chip', item.chipClass]">{{ item.chip }}</span>
           <h3>{{ item.title }}</h3>
@@ -251,7 +251,7 @@ footer: false
     </div>
     <div class="footer-col">
       <h3>快速链接</h3>
-      <a v-for="link in $frontmatter.config.footer.links" :href="link.url" target="_self">{{ link.text }}</a>
+      <a v-for="link in $frontmatter.config.footer.links" :href="link.url" target="_blank"  rel="noopener noreferrer">{{ link.text }}</a>
     </div>
     <div class="footer-col">
       <h3>联系我们</h3>
