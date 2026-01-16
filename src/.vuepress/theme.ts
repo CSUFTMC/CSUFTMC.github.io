@@ -11,7 +11,7 @@ export default hopeTheme({
     // url: "",
   },
 
-  logo: " ",
+  logo: "/assets/logo/logo.png",
 
   repo: "CSUFTMC/CSUFTMC.github.io",
 
