@@ -264,7 +264,7 @@ footer: false
   </div>
 </footer>
 
-<style>
+<style scoped>
 :root {
   --g-blue: #4285f4;
   --g-red: #ea4335;
