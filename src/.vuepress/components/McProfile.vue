@@ -31,56 +31,58 @@
       </div>
     </div>
 
-    <transition name="fade-pop">
-      <div v-if="isVisible" class="mc-modal-overlay" @click.self="closeModal">
-        <div class="mc-modal-card">
-          <button class="close-btn" @click="closeModal">×</button>
-          
-          <div class="modal-header">
-            <img :src="avatarUrl" class="modal-avatar" no-view>
-            <h3>{{ profile.username }}</h3>
-            <span class="role-badge" :style="roleBadgeStyle">{{ profile.role || 'Player' }}</span>
-          </div>
-          
-          <div class="modal-body">
-            <div class="info-grid">
-              <div class="grid-item" v-if="profile.qq">
-                <small>QQ</small> <span>{{ profile.qq }}</span>
-              </div>
-              <div class="grid-item" v-if="profile.joinDate">
-                <small>加入时间</small> <span>{{ profile.joinDate }}</span>
-              </div>
-              <div class="grid-item" v-for="(item, i) in profile.customInfo" :key="i">
-                <small>{{ item.label }}</small> 
-                <span v-html="parseLink(item.value)"></span>
-              </div>
-            </div>
-
-            <div v-if="profile.desc" class="desc-section">
-                <p class="desc-text">{{ profile.desc }}</p>
-            </div>
-
-            <div class="achievement-box">
-              <h3>上榜成就一览 ({{ achievements.length }})</h3>
-              <div v-if="loadingRank" class="loading-rank">正在同步数据...</div>
-              <ul class="achievement-list" v-else-if="achievements.length > 0">
-                <li v-for="item in achievements" :key="item.serverName + item.boardName">
-                  在 <span class="serv-name">{{ item.serverName }}</span> 的 
-                  <span class="board-name">{{ item.boardName }}</span> 中排名 
-                  <span class="a-rank">#{{ item.rank }}</span>，总计
-                  <span class="a-value">{{ item.value }}</span>
-                </li>
-              </ul>
-              <p v-else class="no-achieve-tip">该玩家暂无上榜记录。</p>
+    <Teleport to="body">
+      <transition name="fade-pop">
+        <div v-if="isVisible" class="mc-modal-overlay" @click.self="closeModal">
+          <div class="mc-modal-card">
+            <button class="close-btn" @click="closeModal">×</button>
+            
+            <div class="modal-header">
+              <img :src="avatarUrl" class="modal-avatar" no-view>
+              <h3>{{ profile.username }}</h3>
+              <span class="role-badge" :style="roleBadgeStyle">{{ profile.role || 'Player' }}</span>
             </div>
             
-            <div class="slot-area" v-if="$slots.default">
-              <slot></slot>
+            <div class="modal-body">
+              <div class="info-grid">
+                <div class="grid-item" v-if="profile.qq">
+                  <small>QQ</small> <span>{{ profile.qq }}</span>
+                </div>
+                <div class="grid-item" v-if="profile.joinDate">
+                  <small>加入时间</small> <span>{{ profile.joinDate }}</span>
+                </div>
+                <div class="grid-item" v-for="(item, i) in profile.customInfo" :key="i">
+                  <small>{{ item.label }}</small> 
+                  <span v-html="parseLink(item.value)"></span>
+                </div>
+              </div>
+
+              <div v-if="profile.desc" class="desc-section">
+                  <p class="desc-text">{{ profile.desc }}</p>
+              </div>
+
+              <div class="achievement-box">
+                <h3>上榜成就一览 ({{ achievements.length }})</h3>
+                <div v-if="loadingRank" class="loading-rank">正在同步数据...</div>
+                <ul class="achievement-list" v-else-if="achievements.length > 0">
+                  <li v-for="item in achievements" :key="item.serverName + item.boardName">
+                    在 <span class="serv-name">{{ item.serverName }}</span> 的 
+                    <span class="board-name">{{ item.boardName }}</span> 中排名 
+                    <span class="a-rank">#{{ item.rank }}</span>，总计
+                    <span class="a-value">{{ item.value }}</span>
+                  </li>
+                </ul>
+                <p v-else class="no-achieve-tip">该玩家暂无上榜记录。</p>
+              </div>
+              
+              <div class="slot-area" v-if="$slots.default">
+                <slot></slot>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </transition>
+      </transition>
+    </Teleport>
   </div>
 </template>
 
