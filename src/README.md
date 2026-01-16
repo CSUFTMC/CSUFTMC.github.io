@@ -3,7 +3,7 @@ home: true
 icon: house
 title: 主页
 heroFullScreen: true
-heroImage: /assets/logo/logo.png
+heroImage: /assets/logo.png
 bgImage: /assets/image/home.webp
 bgImageDark: /assets/image/home-dark.webp
 bgImageStyle:
