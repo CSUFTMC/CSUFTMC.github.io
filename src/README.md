@@ -389,7 +389,7 @@ footer: false
 }
 
 @media (max-width: 959px) {
-    [vp-content]:not(.custom) {
+    .home [vp-content]:not(.custom) {
         padding: 2px;
     }
 }
