@@ -159,7 +159,7 @@ footer: false
   <h2 class="g-title">🧭 探索与发现</h2>
   <div class="bento-grid">
     <template v-for="item in $frontmatter.config.bento">
-      <a v-if="item.link" :href="item.link" :class="['bento-item', 'bento-' + item.type]" target="_blank"  rel="noopener noreferrer">
+      <a v-if="item.link" :href="item.link" :class="['bento-item', 'bento-' + item.type]" target="_self">
         <div class="bento-content">
           <span v-if="item.chip" :class="['chip', item.chipClass]">{{ item.chip }}</span>
           <h3>{{ item.title }}</h3>
@@ -251,7 +251,7 @@ footer: false
     </div>
     <div class="footer-col">
       <h3>快速链接</h3>
-      <a v-for="link in $frontmatter.config.footer.links" :href="link.url" target="_blank"  rel="noopener noreferrer">{{ link.text }}</a>
+      <a v-for="link in $frontmatter.config.footer.links" :href="link.url" target="_self">{{ link.text }}</a>
     </div>
     <div class="footer-col">
       <h3>联系我们</h3>
