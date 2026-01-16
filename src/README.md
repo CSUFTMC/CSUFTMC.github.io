@@ -30,7 +30,7 @@ config:
       chip: "服务器"
       chipClass: "green"
       img: "/assets/image/a01.webp"
-      link: "https://www.csuftmc.dpdns.org/servers.html"
+      link: "./servers.md"
 
     - type: medium
       title: "绿洲世界"
@@ -117,7 +117,7 @@ config:
   # 4. 常见问题 (FAQ)
   faq:
     - q: "如何加入服务器？"
-      a: "只需简单三步：<br>1. 前往<a href='https://www.csuftmc.dpdns.org/servers.html'>服务器列表</a>复制服务器地址；<br>2. 在 Minecraft 客户端点击「多人游戏」-「添加服务器」；<br>3. 填入地址并保存，点击进入即可开启旅程。初次进入请记得查看群公告完成绑定。"
+      a: "只需简单三步：<br>1. 前往<a href='./servers.md'>服务器列表</a>复制服务器地址；<br>2. 在 Minecraft 客户端点击「多人游戏」-「添加服务器」；<br>3. 填入地址并保存，点击进入即可开启旅程。初次进入请记得查看群公告完成绑定。"
       open: true
     - q: "对客户端版本有要求吗？"
       a: "原生支持 Java 1.21.10，同时兼容Java 1.18-1.21.10。"
@@ -126,7 +126,7 @@ config:
     - q: "我必须是社团成员或本校学生吗？"
       a: "完全不必。我们欢迎任何同好加入我们。是否加入社团取决于你的选择。但无论如何我们都欢迎你随时一起玩。" 
     - q: "我可以为社团工作做贡献吗？"
-      a: "当然。我们非常期待有才华、有热情的伙伴加入建设。无论是技术支持、建筑创作还是资金赞助，我们都由衷感谢。请 <a href='https://www.csuftmc.dpdns.org/docs/Overview.html'>点击此处查看负责人</a>或<a href='https://www.csuftmc.dpdns.org/docs/Donation.html'>点击此处查看贡献指南</a>。"            
+      a: "当然。我们非常期待有才华、有热情的伙伴加入建设。无论是技术支持、建筑创作还是资金赞助，我们都由衷感谢。请 <a href='./docs/Overview.md'>点击此处查看负责人</a>或<a href='./docs/Donation.md'>点击此处查看贡献指南</a>。"            
   
   # 5. 贡献者 (Contributors) - 修改为简单的用户名列表
   # 直接在这里添加名字，下方的 PlayerList 组件会自动读取并展示
@@ -142,11 +142,11 @@ config:
     about: "中南林 Minecraft 爱好者组织。不删档、不换周目，不肝不氪的纯生存养老服务器，支持离线登录。"
     links:
       - text: "服务器列表"
-        url: "https://www.csuftmc.dpdns.org/servers.html"
+        url: "./servers.md"
       - text: "安装教程"
-        url: "https://www.csuftmc.dpdns.org/docs/Installation_instructions.html"
+        url: "./docs/Installation_instructions.md"
       - text: "捐赠方式"
-        url: "https://www.csuftmc.dpdns.org/docs/Donation.html"
+        url: "./docs/Donation.md"
     contact:
       addr: "csuftmc.dpdns.org"
       douyin: "CSUFTMC"
@@ -220,9 +220,9 @@ footer: false
 <div class="g-section">
   <h2 class="g-title">💎 开发者与贡献者</h2>
   <div class="player-list-wrapper">
-    <ClientOnly>
-    <PlayerList :username="$frontmatter.config.contributors.join(',')" />
-    </ClientOnly>
+
+  <PlayerList :username="$frontmatter.config.contributors.join(',')" />
+
   </div>
 </div>
 
@@ -231,7 +231,14 @@ footer: false
     <h2 class="g-title">🚀 开启你的旅程</h2>
     <p>准备好进入无限可能的世界了吗？</p>
     <div class="join-actions">
-      <a href="https://qun.qq.com/universal-share/share?ac=1&authKey=yVPMC4Gm%2BCkgx%2BUhudMJ1AA/xL9aEuulnPURbd4dxLoQH3nZKgVglRqJ1UHt08e/&busi_data=eyJncm91cENvZGUiOiI5OTYwNzI3MTIiLCJ0b2tlbiI6ImVlT25iaGR4MFlLMTd6S3BQZ1BFRFRldlYzVFIwcXRoNFR2dkVaeU83NW5TenFqSURuK2N3NWcyaEt1MGd2WkkiLCJ1aW4iOiIzOTgyOTQ4NDcxIn0=&data=VG6c1ZLBB15XLTc24BsY1a3W3-Xn2T3uVTuLVPwSxZwPLaeTBU968bP7HjlXcP9cR97oOOczfp4bi-v590f5YWR6NpvX9qycwEDDagbdlSo&svctype=5&tempid=h5_group_info" class="g-btn-primary">立即加入 QQ 群 (996072712)</a>
+      <a 
+        href="https://qun.qq.com/universal-share/share?ac=1&authKey=yVPMC4Gm%2BCkgx%2BUhudMJ1AA/xL9aEuulnPURbd4dxLoQH3nZKgVglRqJ1UHt08e/&busi_data=eyJncm91cENvZGUiOiI5OTYwNzI3MTIiLCJ0b2tlbiI6ImVlT25iaGR4MFlLMTd6S3BQZ1BFRFRldlYzVFIwcXRoNFR2dkVaeU83NW5TenFqSURuK2N3NWcyaEt1MGd2WkkiLCJ1aW4iOiIzOTgyOTQ4NDcxIn0=&data=VG6c1ZLBB15XLTc24BsY1a3W3-Xn2T3uVTuLVPwSxZwPLaeTBU968bP7HjlXcP9cR97oOOczfp4bi-v590f5YWR6NpvX9qycwEDDagbdlSo&svctype=5&tempid=h5_group_info" 
+        class="g-btn-primary"
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        立即加入 QQ 群 (996072712)
+      </a>
     </div>
   </div>
 </div>

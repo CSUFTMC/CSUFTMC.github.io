@@ -1,5 +1,5 @@
 <template>
-  <div :class="['player-list-wrapper', `list-size-${size}`]">
+  <div v-if="isMounted" :class="['player-list-wrapper', `list-size-${size}`]">
     <McProfile 
       v-for="p in filteredList" 
       :key="p.username"
@@ -7,10 +7,11 @@
       :size="size" 
     />
   </div>
+  <div v-else class="player-list-placeholder"></div>
 </template>
 
 <script setup>
-import { computed } from 'vue';
+import { ref, onMounted, computed } from 'vue';
 import { playerGroups } from '../data/players.js';
 import McProfile from "./McProfile.vue";
 
@@ -21,25 +22,40 @@ const props = defineProps({
   size: { type: String, default: 'medium' }
 });
 
+// 核心修改：控制挂载状态
+const isMounted = ref(false);
+
+onMounted(() => {
+  isMounted.value = true;
+});
+
 const filteredList = computed(() => {
+  // 如果还没挂载，直接返回空数组，减少不必要的计算
+  if (!isMounted.value) return [];
+
   // 提取所有玩家并去重
   const allGroups = Object.values(playerGroups).flat();
   const uniqueMap = new Map();
-  allGroups.forEach(p => { if (p.username) uniqueMap.set(p.username, p); });
+  allGroups.forEach(p => { 
+    if (p && p.username) uniqueMap.set(p.username, p); 
+  });
   const allUniquePlayers = Array.from(uniqueMap.values());
 
   // 1. 按用户名筛选
   if (props.username) {
     const targets = props.username.split(',').map(s => s.trim());
-    return targets.map(name => allUniquePlayers.find(p => p.username === name)).filter(p => p);
+    return targets
+      .map(name => allUniquePlayers.find(p => p.username === name))
+      .filter(p => p);
   }
 
   // 2. 按分组类型筛选
   if (props.type && props.type !== 'all') {
     const targets = props.type.split(',').map(s => s.trim());
     const result = [];
-    targets.forEach(t => { if (playerGroups[t]) result.push(...playerGroups[t]); });
-    // 去重，防止一个玩家在多个组中重复显示
+    targets.forEach(t => { 
+      if (playerGroups[t]) result.push(...playerGroups[t]); 
+    });
     return result.filter((v, i, a) => a.findIndex(t => t.username === v.username) === i);
   }
 
@@ -62,4 +78,9 @@ const filteredList = computed(() => {
   margin: 10px 0;
 }
 .list-size-small { gap: 8px; }
+
+
+.player-list-placeholder {
+  min-height: 40px;
+}
 </style>
