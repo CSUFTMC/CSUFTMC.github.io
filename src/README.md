@@ -220,7 +220,9 @@ footer: false
 <div class="g-section">
   <h2 class="g-title">💎 开发者与贡献者</h2>
   <div class="player-list-wrapper">
+    <ClientOnly>
     <PlayerList :username="$frontmatter.config.contributors.join(',')" />
+    </ClientOnly>
   </div>
 </div>
 
