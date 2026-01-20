@@ -43,7 +43,7 @@ photoSwipe: false
 
 <div style="display: flex; flex-wrap: wrap;  gap: 10px;">
   <!-- <ServerStatus host="frp-art.com:40054" inline /> -->
-  <ServerQuery defaultHost="csuftmc.dpdns.org" align="left"
+  <ServerQuery defaultHost="frp-oak.com:55907" align="left"
   :presets="[
     { name: '自动选择', host: 'csuftmc.dpdns.org' },
     { name: '湖北三网', host: 'frp-tag.com:59465' },
