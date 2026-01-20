@@ -1,12 +1,7 @@
-// place your custom styles here
 /* .vuepress/styles/index.scss */
 
-/**
- * 仅在主页生效的样式空间
- * 依赖于 index.md 中设置的 containerClass: homepage-only
- */
 .homepage-only {
-  /* 1. 变量定义 (仅作用于主页局部) */
+  /* 变量定义 */
   --g-blue: #4285f4;
   --g-red: #ea4335;
   --g-yellow: #fbbc05;
@@ -15,216 +10,111 @@
   --g-radius: 28px;
   --g-radius-inner: 18px;
 
-  /* 2. 基础板块布局 */
-  .g-section {
-    padding: 5rem 0rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+  /* 通用布局 */
+  .g-section { padding: 5rem 0rem; max-width: 1200px; margin: 0 auto; }
+  .g-bg-soft { background: var(--bg-color-soft); max-width: 100%; }
+  .g-title { text-align: center; font-size: 2.2rem; margin-bottom: 3.5rem; border: none; font-weight: 600; }
 
-  .g-bg-soft {
-    background: var(--bg-color-soft);
-    max-width: 100%;
-    width: 100vw;
-    margin-left: calc(50% - 50vw); /* 强制全屏背景宽度 */
-  }
-
-  .g-title {
-    text-align: center;
-    font-size: 2.2rem;
-    margin-bottom: 3.5rem;
-    border: none;
-    font-weight: 600;
-  }
-
-  /* 3. Bento Grid 核心样式 */
-  .bento-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 160px;
-    gap: 0.8rem;
-  }
-
-  .bento-item {
-    background: var(--bg-color);
-    border-radius: var(--g-radius);
-    padding: 0.9rem;
-    box-shadow: var(--g-shadow);
-    text-decoration: none !important;
-    color: var(--text-color) !important;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid var(--border-color);
-
-    &:hover {
-      transform: scale(1.01);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-      z-index: 2;
-    }
-
-    h3 { margin: 8px 0 0; }
-    p { margin: 8px 0 4px; font-size: 0.9rem; opacity: 0.8; }
-  }
-
-  .bento-hero {
-    grid-column: span 2;
-    grid-row: span 3;
-    .bento-img-wrapper {
-      margin-top: auto;
-      border-radius: var(--g-radius-inner);
-      overflow: hidden;
-      height: 250px;
-      img { width: 100%; height: 100%; object-fit: cover; }
-    }
-  }
-
-  .bento-feature {
-    grid-column: span 1;
-    grid-row: span 1;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    .bento-icon { font-size: 1.8rem; margin-bottom: 0.5rem; }
-    h4 { margin: 0; font-size: 1rem; }
-    p { font-size: 0.8rem; }
-  }
-
+  /* Bento Grid 样式 */
+  .bento-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 160px; gap: 0.8rem; }
+  .bento-item { background: var(--bg-color); border-radius: var(--g-radius); padding: 0.9rem; box-shadow: var(--g-shadow); text-decoration: none !important; color: var(--text-color) !important; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--border-color); }
+  .bento-item:hover { transform: scale(1.01); box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08); z-index: 2; }
+  .bento-hero { grid-column: span 2; grid-row: span 3; }
+  .bento-hero .bento-img-wrapper { margin-top: auto; border-radius: var(--g-radius-inner); overflow: hidden; height: 250px; }
+  .bento-hero img { width: 100%; height: 100%; object-fit: cover; }
+  .bento-feature { grid-column: span 1; grid-row: span 1; justify-content: center; align-items: center; text-align: center; }
+  .bento-feature .bento-icon { font-size: 1.8rem; margin-bottom: 0.5rem; }
+  .bento-feature h4 { margin: 0; font-size: 1rem; }
+  .bento-feature p { font-size: 0.8rem; opacity: 0.7; margin: 4px 0 0; }
   .bento-medium { grid-column: span 1; grid-row: span 2; }
   .bento-wide { grid-column: span 2; grid-row: span 1; justify-content: center; }
+  .bento-content h3 { margin-top: 8px; margin-bottom: 0px; }
+  .bento-content p { margin-top: 8px; margin-bottom: 4px; }
 
-  /* 4. 标签 (Chip) */
-  .chip {
-    font-size: 0.7rem;
-    font-weight: 700;
-    padding: 3px 10px;
-    border-radius: 12px;
-    width: fit-content;
-    margin-bottom: 0.8rem;
-    &.blue { background: #e8f0fe; color: var(--g-blue); }
-    &.green { background: #e6f4ea; color: var(--g-green); }
-    &.yellow { background: #fef7e0; color: #b06000; }
-  }
+  /* 标签与组件 */
+  .chip { font-size: 0.7rem; font-weight: 700; padding: 3px 10px; border-radius: 12px; width: fit-content; margin-bottom: 0.8rem; }
+  .chip.blue { background: #e8f0fe; color: var(--g-blue); }
+  .chip.green { background: #e6f4ea; color: var(--g-green); }
+  .chip.yellow { background: #fef7e0; color: #b06000; }
+  .chip.red { background: #fce8e6; color: var(--g-red); }
 
-  /* 5. 玩家作品展示 */
-  .gallery-bento {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 200px;
-    gap: 1rem;
-    .gallery-item {
-      position: relative;
-      border-radius: var(--g-radius-inner);
-      overflow: hidden;
-      img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
-      span {
-        position: absolute;
-        bottom: 0; left: 0; right: 0;
-        padding: 1rem;
-        background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
-        color: white;
-        font-size: 0.9rem;
-        opacity: 0;
-        transition: opacity 0.3s;
-      }
-      &:hover {
-        img { transform: scale(1.1); }
-        span { opacity: 1; }
-      }
-      &.large { grid-column: span 2; grid-row: span 2; }
-      &.tall { grid-row: span 2; }
-    }
-  }
+  /* 作品展示 */
+  .gallery-bento { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 200px; gap: 1rem; }
+  .gallery-item { position: relative; border-radius: var(--g-radius-inner); overflow: hidden; }
+  .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+  .gallery-item:hover img { transform: scale(1.1); }
+  .gallery-item span { position: absolute; bottom: 0; left: 0; right: 0; padding: 1rem; background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)); color: white; font-size: 0.9rem; opacity: 0; transition: opacity 0.3s; }
+  .gallery-item:hover span { opacity: 1; }
+  .gallery-item.large { grid-column: span 2; grid-row: span 2; }
+  .gallery-item.wide { grid-column: span 2; }
+  .gallery-item.tall { grid-row: span 2; }
 
-  /* 6. 路线图与 FAQ */
-  .roadmap-container {
-    max-width: 800px;
-    margin: 0 auto;
-    .roadmap-item {
-      display: flex;
-      gap: 2rem;
-      margin-bottom: 2.5rem;
-      &.current .roadmap-date { color: var(--g-red); }
-    }
-    .roadmap-date { font-weight: bold; color: var(--g-blue); min-width: 70px; }
-    .roadmap-content {
-      background: var(--bg-color);
-      padding: 1.2rem;
-      border-radius: var(--g-radius-inner);
-      box-shadow: var(--g-shadow);
-      flex: 1;
-      border: 1px solid var(--border-color);
-      h4 { margin: 0 0 10px 0; }
-    }
-  }
+  /* 路线图与 FAQ */
+  .roadmap-container { max-width: 800px; margin: 0 auto; }
+  .roadmap-item { display: flex; gap: 2rem; margin-bottom: 2.5rem; }
+  .roadmap-date { font-weight: bold; color: var(--g-blue); min-width: 70px; }
+  .roadmap-content { background: var(--bg-color); padding: 0.6rem; border-radius: var(--g-radius-inner); box-shadow: var(--g-shadow); flex: 1; border: 1px solid var(--border-color); }
+  .roadmap-content h4 { margin: 10px; }
+  .g-faq { max-width: 800px; margin: 0 auto; }
+  .g-faq details { background: var(--bg-color); border-radius: 18px; margin-bottom: 0.8rem; box-shadow: var(--g-shadow); border: 1px solid var(--border-color); }
+  .g-faq summary { padding: 1.25rem; cursor: pointer; font-weight: 500; list-style: none; position: relative; }
+  .g-faq summary::after { content: '↓'; position: absolute; right: 1.5rem; opacity: 0.3; }
+  .details-content { padding: 0 1.25rem 1.25rem; color: var(--text-color-light); }
 
-  .g-faq {
-    max-width: 800px;
-    margin: 0 auto;
-    details {
-      background: var(--bg-color);
-      border-radius: 18px;
-      margin-bottom: 0.8rem;
-      box-shadow: var(--g-shadow);
-      border: 1px solid var(--border-color);
-      summary { padding: 1.25rem; cursor: pointer; font-weight: 500; list-style: none; position: relative; &::after { content: '↓'; position: absolute; right: 1.5rem; opacity: 0.3; } }
-      .details-content { padding: 0 1.25rem 1.25rem; color: var(--text-color-light); }
-    }
-  }
+  /* 底部与加入区域 */
+  .join-section { text-align: center; padding: 3rem 1rem; }
+  .g-btn-primary { background-color: var(--g-blue) !important; color: white !important; padding: 0.8rem 2.5rem !important; border-radius: 50px !important; text-decoration: none !important; display: inline-block; }
+  #join-us { scroll-margin-top: 80px; }
 
-  /* 7. 主页 Hero 文本增强修复 */
-  #main-title, 
+  .g-footer { background: var(--bg-color-soft); padding: 4rem 2rem 2rem; border-top: 1px solid var(--border-color); }
+  .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.25rem; max-width: 1000px; margin: 0 auto; }
+  .footer-col h3 { color: var(--g-blue); font-size: 0.9rem; margin-bottom: 1rem; }
+  .footer-col a { display: block; margin-bottom: 0.5rem; color: var(--text-color-light); font-size: 0.95rem; text-decoration: none !important; }
+  .footer-col a::before { content: "▹"; margin-right: 8px; transition: all 0.3s; }
+  .footer-col a:hover::before { content: "▶"; color: var(--g-blue); padding-right: 4px; }
+  .footer-col:nth-child(2) { padding-left: 15%; }
+  .footer-bottom { text-align: center; margin-top: 3rem; font-size: 0.75rem; opacity: 0.5; }
+
+  /* 核心文字样式覆盖 */
+  #main-title,
   #main-description {
-    -webkit-text-fill-color: #fff !important; 
+    -webkit-text-fill-color: #fff !important;
     color: #fff !important;
+    background-clip: border-box !important;
+    -webkit-background-clip: border-box !important;
     background-image: none !important;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.9), 2px 2px 10px rgba(0, 0, 0, 0.7);
+    transition: transform 0.25s ease-in-out 0.04s, opacity 0.25s ease-in-out 0.04s;
   }
 
-  /* 8. 响应式与 Padding 修复 */
+  .vp-hero-action.primary { color: #fff; }
+  .player-list-wrapper { display: flex; justify-content: center; align-items: center; width: 100%; margin: 0 auto; }
+
+  /* 响应式适配 */
   @media (max-width: 959px) {
-    /* 解决你提到的 Padding 被拉大的问题 */
-    &.vp-page {
-      padding: 1rem 1rem !important; 
-    }
-    .bento-grid, .gallery-bento { grid-template-columns: repeat(2, 1fr); }
+    .bento-grid { grid-template-columns: repeat(2, 1fr); }
+    .gallery-bento { grid-template-columns: repeat(2, 1fr); }
+    &[vp-content]:not(.custom) { padding: 2px !important; }
   }
 
   @media (max-width: 719px) {
     .bento-grid { grid-template-columns: 1fr; grid-auto-rows: auto; }
     .bento-hero, .bento-medium, .bento-wide { grid-column: span 1; grid-row: span 1; }
-    .gallery-bento { grid-template-columns: 1fr; }
+    .bento-item { min-height: 160px; }
+    .gallery-bento { grid-template-columns: 1fr; grid-auto-rows: auto; }
     .gallery-item.large { grid-column: span 1; }
+    .footer-col:nth-child(2) { padding-left: 0%; }
   }
 
-  /* 9. 页脚样式定制 */
-  .g-footer {
-    background: var(--bg-color-soft);
-    padding: 4rem 2rem 2rem;
-    margin-top: 5rem;
-    .footer-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    .footer-col {
-      h3 { color: var(--g-blue); font-size: 1rem; margin-bottom: 1rem; }
-      a { 
-        display: block; margin-bottom: 0.5rem; color: var(--text-color-light); text-decoration: none !important;
-        &::before { content: "▹"; margin-right: 8px; }
-        &:hover::before { content: "▶"; color: var(--g-blue); }
-      }
-      &:nth-child(2) { padding-left: 10%; }
-    }
-    .footer-bottom { text-align: center; margin-top: 3rem; font-size: 0.8rem; opacity: 0.5; }
-  }
-
-  /* 暗色模式适配 */
+  /* 暗色模式微调 */
   [data-theme="dark"] & {
     .chip { background: rgba(255, 255, 255, 0.1); color: #fff; }
     .bento-item, .roadmap-content, .g-faq details { background: #1e1e1e; border-color: rgba(255, 255, 255, 0.1); }
+  }
+  /* 核心容器 Padding 修改：仅在主页生效 */
+  [vp-content]:not(.custom) {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 2rem 1.25rem;
   }
 }
