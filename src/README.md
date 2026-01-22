@@ -9,18 +9,21 @@ bgImageDark: /assets/image/home-dark.webp
 bgImageStyle:
   background-attachment: fixed
 heroText: 🌲 CSUFTMC
-tagline: 我们用方块构建无限可能的世界。欢迎加入我们，探索技术与乐趣！
+tagline: 这里是中南林业科技大学MineCraft社团，我们用方块构建无限可能的世界。欢迎加入我们，探索技术与乐趣！
 
 actions:
   - text: 立即加入
     icon: user-plus
     link: "#join-us"
     type: primary
+  - text: 服务器
+    link: ./servers.md
+    icon: server
+    type: primary
   - text: 文档
     link: ./docs/
     icon: book
     type: primary
-
 # ================= 配置开始 =================
 config:
   # 1. 核心版块 (Bento Grid)
