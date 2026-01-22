@@ -117,4 +117,26 @@
     margin: 0 auto;
     padding: 2rem 1.25rem;
   }
+  .feedback-btn {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 3px 10px;
+    font-size: 12px;
+    color: #ffffff;            
+    background-color: #444; 
+    border-radius: 4px;
+    text-decoration: none !important;  
+    transition: all 0.3s ease; 
+  }
+
+  .feedback-btn:hover {
+    color: #ffffff !important;         
+    text-decoration: none !important;  
+    background-color: #007bff; 
+    transform: scale(1.1);   
+  }
+
+  .feedback-btn:active {
+    transform: translateY(0); 
+  }
 }

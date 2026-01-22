@@ -265,6 +265,7 @@ footer: false
   </div>
   <div class="footer-bottom">
     除另有声明本站内容遵循 CC BY-NC-SA 4.0 许可协议 | Copyright © 2025-2026 CSUFTMC
+    <a href="https://tally.so/r/MeEbNA" target="_blank" class="feedback-btn">反馈与建议</a>
   </div>
 </footer>
 
