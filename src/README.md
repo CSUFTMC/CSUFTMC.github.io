@@ -9,7 +9,7 @@ bgImageDark: /assets/image/home-dark.webp
 bgImageStyle:
   background-attachment: fixed
 heroText: 🌲 CSUFTMC
-tagline: 这里是中南林业科技大学MineCraft社团，我们用方块构建无限可能的世界。欢迎加入我们，探索技术与乐趣！
+tagline: 这里是中南林业科技大学MineCraft爱好者社区，我们用方块构建无限可能的世界。欢迎加入我们，探索技术与乐趣！
 
 actions:
   - text: 立即加入
@@ -102,13 +102,13 @@ config:
   # 3. 发展路线 (Roadmap)
   roadmap:
   - date: "2025 往昔"
-    title: "基石阶段：社团创立与初探"
+    title: "基石阶段：社区创立与初探"
     items:
-    - "CSUFTMC 组织成立"
+    - "CSUFTMC 社区成立"
     - "主服务器成功上线，确立生存、建筑、红石多维玩法。"
     - "初步建立 QQ 社区，达成首批核心玩家入驻。"
   - date: "2026 Q1"
-    title: "当前重点：体验优化与社团扩张"
+    title: "当前重点：体验优化与社区扩张"
     current: true
     items:
       - "开启多平台招新计划，吸纳更多热爱建筑与技术的伙伴。"
@@ -116,7 +116,7 @@ config:
   - date: "2026 Q2"
     title: "计划：架构细化与功能互通"
     items:
-      - "细化社团职能部门（管理、技术、建筑、宣发），各司其职。"
+      - "细化社区职能部门（管理、技术、建筑、宣发），各司其职。"
 
   # 4. 常见问题 (FAQ)
   faq:
@@ -127,9 +127,9 @@ config:
       a: "原生支持 Java 1.21.10，同时兼容Java 1.18-1.21.10。"
     - q: "需要购买正版账户吗？"
       a: "不需要。但我们强烈提倡您购买并使用<a href='https://www.minecraft.net/'  target='_blank'  rel='noopener noreferrer'>Minecraft 正版</a>，以支持游戏开发者，并获得更安全、更完整的游戏体验。但为了让尽可能多的爱好者加入游戏，我们选择了离线登录。"
-    - q: "我必须是社团成员或本校学生吗？"
-      a: "完全不必。我们欢迎任何同好加入我们。是否加入社团取决于你的选择。但无论如何我们都欢迎你随时一起玩。" 
-    - q: "我可以为社团工作做贡献吗？"
+    - q: "我必须是社区成员或本校学生吗？"
+      a: "完全不必。我们欢迎任何同好加入我们。是否加入社区取决于你的选择。但无论如何我们都欢迎你随时一起玩。" 
+    - q: "我可以为社区工作做贡献吗？"
       a: "当然。我们非常期待有才华、有热情的伙伴加入建设。无论是技术支持、建筑创作还是资金赞助，我们都由衷感谢。请 <a href='https://www.csuftmc.dpdns.org/docs/Overview.html'  target='_blank'  rel='noopener noreferrer'>点击此处查看负责人</a>或<a href='https://www.csuftmc.dpdns.org/docs/Donation.html'  target='_blank'  rel='noopener noreferrer'>点击此处查看贡献指南</a>。"            
   
   # 5. 贡献者 (Contributors) - 修改为简单的用户名列表
@@ -143,7 +143,7 @@ config:
 
   # 6. 页脚 (Footer)
   footer:
-    about: "中南林 Minecraft 爱好者组织。不删档、不换周目，不肝不氪的纯生存养老服务器，支持离线登录。"
+    about: "中南林 Minecraft 爱好者社区。不删档、不换周目，不肝不氪的纯生存养老服务器，支持离线登录。"
     links:
       - text: "服务器列表"
         url: "https://www.csuftmc.dpdns.org/servers.html"
