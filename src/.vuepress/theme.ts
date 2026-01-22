@@ -4,7 +4,7 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+  hostname: "https://www.csuftmc.dpdns.org",
 
   author: {
     name: "NickAe",
@@ -135,6 +135,10 @@ export default hopeTheme({
     icon: {
       prefix: "fa6-solid:",
     },
+
+    sitemap: true,
+
+    seo: true,
 
     // 如果你需要 PWA。安装 @vuepress/plugin-pwa 并取消下方注释
     // pwa: {
