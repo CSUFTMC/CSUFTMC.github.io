@@ -5,8 +5,7 @@ export const playerGroups = {
       username: "Ceceport",
       joinDate: "2025-11-18",
       role: "Admin",
-      qq: "958630146",
-      desc: "现任服主，运行和维护服务器。有任何问题欢迎QQ联系。",
+      desc: "现任服主，运行和维护服务器。",
       customInfo: [{ label: '职位', value: '服务器管理员' }, { label: '状态', value: '活跃' }]
     },
     {
