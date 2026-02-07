@@ -1,67 +1,75 @@
 ---
 title: 安装教程
-icon: object-group
+icon: download
 order: 3
+---
+
+# 🛠️ 游玩准备与安装
+
+在加入 CSUFTMC 之前，您需要准备好 Java 运行环境、游戏启动器以及了解服务器的登录验证方式。
 
 ---
 
-## 1、安装环境（Java的安装）
+## 1. 安装运行环境 (Java)
 
-**游玩Minecraft Java版需要先安装Java** 您可以通过以下方式安装Java：
+游玩 Minecraft Java 版必须安装对应版本的 Java 环境。
 
-Java下载官方网站：
+::: tip 版本对应建议
+* **1.20.x 及以上**：推荐安装 [Java 21](https://www.oracle.com/cn/java/technologies/downloads/#java21)
+* **1.17 - 1.19.x**：推荐安装 [Java 17](https://www.oracle.com/cn/java/technologies/downloads/#java17)
+* **1.16.5 及以下**：必须安装 [Java 8](https://www.oracle.com/cn/java/technologies/downloads/#java8)
+:::
 
-[Java8](https://www.oracle.com/cn/java/technologies/downloads/#java8)（适用于Minecraft Java版1.16.5及以下版本，下载需登录）
+**备用下载源：**
+若官方下载缓慢，可使用 [星光镜像站](https://www.starlight.cool/download/jdk/)。
 
-[Java17](https://www.oracle.com/cn/java/technologies/downloads/#java17)（适用于Minecraft Java版1.17及以上版本）
+::: warning 自动安装提示
+如果您使用 PCL2 或 HMCL 启动器，它们通常能够**自动检测并下载**缺失的 Java 版本，您也可以在启动器设置中手动指定 Java 路径。
+:::
 
-[Java21](https://www.oracle.com/cn/java/technologies/downloads/#java21)（适用于Minecraft Java版1.20及以上版本）
+---
 
-第三方下载站：https://www.starlight.cool/download/jdk/
+## 2. 选择启动器
 
-请根据您的系统和游戏版本，选择下载并安装对应的exe或dmg安装文件。安装过程中一般只需要不断点击下一步即可。
+为了获得最佳的模组安装与线路测试体验，我们**强烈建议使用第三方启动器**。
 
-**如果您使用官方启动器/第三方HMCL启动器，它们在电脑中没有合适的Java的情况下，可能会自动下载合适的Java版本，但也可以事先安装Java后，由启动器自动检测Java目录并启动。**
+| 启动器 | 支持平台 | 特点 | 下载链接 |
+| :--- | :--- | :--- | :--- |
+| **PCL2** | Windows | **首选推荐**，界面精美，自带节点测速 | [官方下载](https://ifdian.net/p/0164034c016c11ebafcb52540025c377) |
+| **HMCL** | 全平台 | 经典稳定，支持所有主流系统 | [官方下载](https://hmcl.huangyuhui.net/download/) |
+| **XMCL** | 全平台 | 现代化界面，优秀的模组包管理 | [官方下载](https://xmcl.app/zh/) |
+| **FCL** | Android | 手机端游玩 Java 版的推荐选择 | [GitHub Release](https://github.com/FCL-Team/FoldCraftLauncher/releases) |
 
-## 2、启动器的选择
+---
 
-在2016年前后，国内的Hello! Minecraft Launcher（简称HMCL）与Plain Craft Launcher（简称PCL）两款第三方启动器相继问世，因其启动速度快、登录便捷、支持第三方登录、可以直接下载mod、整合包与模组等特点，很快成为国内启动器使用的主流。一般情况下我们不推荐您使用官方启动器。
+## 3. 账户登录与验证
 
-**PCL2和HMCL下载的方式如下：**
+### 🔐 账户类型
+Minecraft 登录分为以下三种模式：
+1. **正版登录**：使用微软账号登录。我们强烈建议您[购买正版](https://www.xbox.com/zh-CN/games/store/minecraft-java-bedrock-edition-for-pc/9NXP44L49SHJ/0010)以支持开发者。
+2. **离线登录**：无需购买，在启动器中自定义名字即可游玩。
+3. **第三方登录**：使用皮肤站（如 LittleSkin）账号验证。
 
-PCL2：[官方下载](https://ifdian.net/p/0164034c016c11ebafcb52540025c377)（仅支持Windows）
+---
 
-HMCL：[官方下载](https://hmcl.huangyuhui.net/download/)
+### 📢 服务器登录验证 (AuthMe)
 
-XMCL：[官方下载](https://xmcl.app/zh/)
+**目前 CSUFTMC 采用“离线登录 + AuthMe 插件验证”模式。** 无论您是正版还是离线玩家，进入服务器后均需执行以下操作进行身份核验：
 
-FoldCraftLauncher：[官方下载](https://github.com/FCL-Team/FoldCraftLauncher/releases)（安卓手机Java启动器）
+::: danger 账户安全
+请务必牢记您的注册密码，这是保护您服务器财产（背包、领地）的唯一凭证。
+:::
 
-相较于其他启动器，官方启动器能够更换玩家正版披风、了解游戏最新消息、参与Mojang发起的年度生物投票等活动。官方启动器的缺点在于：由于国内网络的限制，官方启动器连接不稳定、加载速度慢，同时加载第三方模组较为不便。如果您想要下载官方启动器，并且已经有了Minecraft正版账号，您可以通过Minecraft官网[下载官方启动器](https://www.minecraft.net/zh-hans/download)。
+#### **指令操作指南：**
 
-## 3、使用账户登录
+* **首次进入服务器 (注册)**：
+  在聊天框输入：`/register <密码> <重复密码>`
+  *例如：`/register 123456 123456`*
 
-Minecraft登陆账户一般分为三种：**离线登录、正版登录、第三方登录**。
+* **后续进入服务器 (登录)**：
+  在聊天框输入：`/login <密码>`
+  *例如：`/login 123456`*
 
-### 正版登录（需要付费购买游戏）
-
-您需要购买Minecraft国际版正版才能使用正版登录。要购买正版，请打开[购买地址](https://www.xbox.com/zh-CN/games/store/minecraft-java-bedrock-edition-for-pc/9NXP44L49SHJ/0010)，点击右上角“登录”，登录您的微软账号。
-
-登录后，点击“购买 ￥89”，添加支付方式，你可以选择银行卡支付，也可以选择eWallet（支付宝）付款。付款结束后，恭喜你，你拥有了自己的Minecraft正版账户。
-
-支付结束后，打开[编辑档案页面](https://www.minecraft.net/zh-hans/msaprofile/mygames/editprofile)，使用微软账户登录后，便可以设置你的游戏ID。如果点击完成后界面没有任何反应，表明这个游戏ID已被使用，请换一个ID，直到界面跳转，则ID设置完毕。
-
-### 离线登录
-
-离线登录，指不购买正版账户，通过第三方启动器的离线登录模式进入游戏。该模式与正版登录的区别在于，玩家无需登录账户即可游玩Minecraft，但与此同时，离线登录的用户是无法进入绝大多数多人游戏服务器的，同时在多人游戏模式中，您的皮肤、披风很可能无法被其他玩家查看。
-
-### 第三方登录
-
-第三方登录是使用非微软账号的**第三方皮肤站账号**，进行Minecraft服务器的身份验证。
-
-**目前CSUFTMC服务器使用离线+AuthMe验证登录** (我们**强烈提倡**您购买并使用**Minecraft正版账户**，以支持游戏开发者，并获得更安全、更完整的游戏体验。但为了让尽可能多的爱好者加入游戏，我们选择了离线登录。)
-
-###  📢 AuthMe验证方式
-
-- **首次进入：** 需要使用 `/register <密码> <重复密码>` 命令**注册**账号。
-- **后续进入：** 需要使用 `/login <密码>` 命令**登录**。
+::: details 💡 为什么需要 AuthMe 验证？
+由于服务器允许离线登录，任何人都可以使用任何 ID 进入游戏。AuthMe 确保了只有知道密码的人才能控制对应的角色，有效防止账号被他人冒充。
+:::

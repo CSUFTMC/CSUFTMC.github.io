@@ -1,6 +1,6 @@
 ---
 title: 商店教程
-icon: object-group
+icon: cart-shopping
 order: 8
 
 ---

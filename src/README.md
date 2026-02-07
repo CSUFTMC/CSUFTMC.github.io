@@ -244,6 +244,12 @@ footer: false
       >
         立即加入 QQ 群 (996072712)
       </a>
+      <a 
+        href="./servers.md" 
+        class="g-btn-outline"
+      >
+        直接加入服务器
+      </a>
     </div>
   </div>
 </div>

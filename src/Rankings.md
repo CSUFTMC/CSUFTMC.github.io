@@ -1,6 +1,6 @@
 ---
 title: 排行榜
-icon: server
+icon: trophy
 photoSwipe: false
 order: 200
 home: true

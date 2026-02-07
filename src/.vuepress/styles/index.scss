@@ -140,3 +140,24 @@
     transform: translateY(0); 
   }
 }
+
+.join-actions {
+    display: flex;
+    gap: 1rem;             
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;        
+    margin-top: 2rem;
+}
+
+.g-btn-outline {
+    background-color: transparent; 
+    color: var(--g-blue);          
+    padding: 0.8rem 2.5rem;
+    border-radius: 50px;
+    border: 2px solid var(--g-blue);
+    text-decoration: none !important;
+    display: inline-block;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}

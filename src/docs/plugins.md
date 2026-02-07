@@ -1,44 +1,45 @@
 ---
 title: 插件列表
-icon: object-group
+icon: plug
 order: 12
+---
+
+# 🔌 插件列表
+
+本页面列出了 **CSUFTMC** 主服务器当前运行的所有插件。您可以点击对应的插件名称跳转至官方文档或百科，以学习具体的使用方法。
+
+::: tip 参与编辑
+本列表仍在持续完善中。如果您发现缺少说明或有更合适的文档链接，欢迎提交修改建议。
+:::
 
 ---
 
-## 插件列表
+## 📂 功能分类索引
 
-CSUFTMC主服务器的所有插件的列表。你可以**查询相关插件的文档来学习这些插件的使用方法。**
+根据插件的核心作用，我们将服务器功能划分为以下模块。
 
-::: warning
-该页面内容并不完善，需要做进一步调整。
-比如添加超链接、更详细的插件说明等。如果你有能力，请你开始编辑。
-:::
+| 分类模块 | 核心插件与说明 |
+| :--- | :--- |
+| **👑 核心管理** | [EssentialsX](https://essentialsx.net/) (基础)、[CMI](https://www.zrips.net/cmi/) (全能工具)、[LuckPerms](https://luckperms.net/) (权限管理)、[Vault](https://www.spigotmc.org/resources/vault.3431/) (经济桥接) |
+| **🌎 世界管理** | [Multiverse](https://github.com/Multiverse/Multiverse-Core) (多世界系)、[FAWE](https://intellectualsites.github.io/download/fawe.html) (创世神)、[TerraformGenerator](https://www.spigotmc.org/resources/terraformgenerator.75132/) (地形生成) |
+| **🎭 玩家增强** | [AuraSkills](https://auraskills.com/) (技能)、[SkinsRestorer](https://skinsrestorer.net/) (皮肤显示)、[MyPet](https://mypet-plugin.de/) (宠物系统)、[PlayerTitles](https://www.spigotmc.org/resources/83645/) (称号) |
+| **💰 经济贸易** | [QuickShop-Hikari](https://ghost-chu.github.io/QuickShop-Hikari-Docs/) (箱子商店)、[GlobalShop](https://www.spigotmc.org/resources/98244/) (全球市场)、[PlayerPoints](https://dev.bukkit.org/projects/playerpoints) (点券) |
+| **🛡️ 领地安全** | [Residence](https://www.residence-pl.info/) (领地)、[PlotSquared](https://plotsquared.com/) (地皮)、[AuthMe](https://github.com/AuthMe/AuthMeReloaded) (登录验证)、[CoreProtect](https://coreprotect.net/) (查询回档) |
+| **🌐 跨服连接** | [Geyser](https://geysermc.org/) (基岩版兼容)、[Floodgate](https://geysermc.org/) (免登录连接)、[ViaVersion](https://viaversion.com/) (版本兼容) |
+| **🎮 互动趣味** | [EvenMoreFish](https://www.spigotmc.org/resources/evenmorefish.71380/) (钓鱼增强)、[GraveStones+](https://www.spigotmc.org/resources/gravestones.92708/) (墓碑)、[VoiceChat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat) (语音) |
+| **📊 UI 与显示** | [TAB](https://github.com/NEZNAMY/TAB) (列表显示)、[TrMenu](https://trmenu.tade.world/) (高级菜单)、[MiniMOTD](https://github.com/jmanpenilla/MiniMOTD) (标语显示) |
 
-### 根据作用分类
+---
 
-这是CSUFTMC主服务器的所有插件，根据作用进行分类。
+## 📋 完整插件自检表
 
-| **分类**            | **插件名称**                                                 |
-| ------------------- | ------------------------------------------------------------ |
-| **核心管理 & 基础** | Essentials, CMI, CMILib, LuckPerms (权限), Vault (经济桥接), PlugManX (插件管理), eBackup (备份), PlaceholderAPI (变量) |
-| **世界管理 & 生成** | Multiverse-Core, Multiverse-Inventories, Multiverse-Portals, Multiverse-NetherPortals, Multiverse-Legacy-Api, WorldBorder, TerraformGenerator, *VoidWorld, FastAsyncWorldEdit (FAWE) |
-| **玩家属性 & 技能** | AuraSkills, PlayerTitles, MyPet (宠物), AdvancedAchievements (成就), SkinsRestorer (皮肤) |
-| **经济 & 商店**     | QuickShop-Hikari, GlobalShop, Shopkeepers (村民商店), PlayerPoints (点券), eco (经济核心), SweetDrops |
-| **领地 & 安全**     | Residence (领地), PlotSquared (地皮), AuthMe (登录), IPWhitelist, BanItem, CoreProtect (查询回档), AntiMapCopy |
-| **跨服 & 连接**     | Geyser-Spigot, floodgate (基岩版连接), ViaVersion, ViaBackwards, ViaRewind (版本兼容), HAProxyDetector |
-| **系统组件 & 开发** | ProtocolLib, NBTAPI, NBTEdit, packetevents, FoliaCompatibleAPI, nightcore, ip2region |
-| **互动 & 趣味功能** | EvenMoreFish, GraveStonesPlus (墓碑), TreeCuter (砍树), ImageFrame, InteractiveSigns, InvisibleItemFrames, ItemframeSnipper, voicechat (语音) |
-| **菜单 & UI 显示**  | TrMenu, TAB, MiniMOTD, LiteAnnouncer (公告), BookNews, FirOnlineTime (在线时间), Hotkey |
-| **内容增强 & 杂项** | Citizens, CitizensGUI (NPC), *Lores, *Exppond-Next, CustomDrops, BannerMaker, LiteSignIn (签到), PlayerWarp, TPA, fakeplayer, FKBoom, WorldListTrashCan |
+目前服务器总计运行 **83** 个插件。
 
-
-
-### 根据状态分类
-
-这是CSUFTMC主服务器的所有插件，总计包含全部 83 个插件，并标注了**未启用**及**异常**状态。(未启用或异常状态是服务器原因或还未配置导致的，未来可能添加或移除它们。)
+::: details 🔍 点击展开查看完整的 A-Z 插件状态列表
+我们将插件按字母顺序排列，并标注了当前运行状态。
 
 | 状态 | 插件名称 (A-I) | 插件名称 (J-R) | 插件名称 (S-Z) |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | ✅ 正常 | AdvancedAchievements | ItemCommand | Shopkeepers |
 | ✅ 正常 | AntiMapCopy | ItemframeSnipper | SkinsRestorer |
 | ✅ 正常 | AuraSkills | LuckPerms | Sky-Chat |
@@ -58,24 +59,37 @@ CSUFTMC主服务器的所有插件的列表。你可以**查询相关插件的�
 | ✅ 正常 | eBackup | PlotSquared | MiniMOTD |
 | ✅ 正常 | eco | ProtocolLib | nightcore |
 | ✅ 正常 | EntityDetection | PVPMode | PlugManX |
-| ✅ 正常 | Essentials | QuickShop-Hikari |  |
-| ✅ 正常 | EvenMoreFish | Residence |  |
-| ✅ 正常 | ExcellentCrates |  |  |
-| ✅ 正常 | FastAsyncWorldEdit |  |  |
-| ✅ 正常 | FirOnlineTime |  |  |
-| ✅ 正常 | FKBoom |  |  |
-| ✅ 正常 | floodgate |  |  |
-| ✅ 正常 | FoliaCompatibleAPI |  |  |
-| ✅ 正常 | Geyser-Spigot |  |  |
-| ✅ 正常 | GlobalShop |  |  |
-| ✅ 正常 | GraveStonesPlus |  |  |
-| ✅ 正常 | HAProxyDetector |  |  |
-| ✅ 正常 | Hotkey |  |  |
-| ✅ 正常 | ImageFrame |  |  |
-| ✅ 正常 | InteractiveSigns |  |  |
-| ✅ 正常 | InvisibleItemFrames |  |  |
-| ✅ 正常 | ip2region |  |  |
-| ✅ 正常 | IPWhitelist |  |  |
-| --- | --- | --- | --- |
-| ❌ **未启用** | **fakeplayer** | **LiteAnnouncer** |  |
-| ⚠️ **异常** | ***Exppond-Next** | ***Lores** | ***VoidWorld** |
+| ✅ 正常 | Essentials | QuickShop-Hikari | - |
+| ✅ 正常 | EvenMoreFish | Residence | - |
+| ✅ 正常 | ExcellentCrates | - | - |
+| ✅ 正常 | FastAsyncWorldEdit | - | - |
+| ✅ 正常 | FirOnlineTime | - | - |
+| ✅ 正常 | FKBoom | - | - |
+| ✅ 正常 | floodgate | - | - |
+| ✅ 正常 | FoliaCompatibleAPI | - | - |
+| ✅ 正常 | Geyser-Spigot | - | - |
+| ✅ 正常 | GlobalShop | - | - |
+| ✅ 正常 | GraveStonesPlus | - | - |
+| ✅ 正常 | HAProxyDetector | - | - |
+| ✅ 正常 | Hotkey | - | - |
+| ✅ 正常 | ImageFrame | - | - |
+| ✅ 正常 | InteractiveSigns | - | - |
+| ✅ 正常 | InvisibleItemFrames | - | - |
+| ✅ 正常 | ip2region | - | - |
+| ✅ 正常 | IPWhitelist | - | - |
+
+### 🛠️ 异常与未启用项
+| 状态 | 插件名称 | 原因/备注 |
+| :--- | :--- | :--- |
+| ❌ **未启用** | `fakeplayer` | 不适配或未知错误 |
+| ❌ **未启用** | `LiteAnnouncer` | 不适配或未知错误 |
+| ⚠️ **异常** | `*Exppond-Next` | 插件兼容性冲突，等待更新 |
+| ⚠️ **异常** | `*Lores` | NBT 修改器版本过旧（推测）、不适配或未知错误 |
+| ⚠️ **异常** | `*VoidWorld` | 未知错误 |
+
+:::
+
+---
+
+## 💡 开发组件说明
+部分插件（如 `ProtocolLib`, `NBTAPI`, `packetevents`）属于**系统级组件**，不提供玩家指令，但它们是保障其他功能（如皮肤显示、物品修改）正常运行的核心。

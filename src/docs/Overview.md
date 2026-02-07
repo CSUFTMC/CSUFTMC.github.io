@@ -1,6 +1,6 @@
 ---
 title: 信息一览
-icon: object-group
+icon: circle-info
 order: 1
 
 ---

@@ -7,87 +7,156 @@ comment: false
 photoSwipe: false
 ---
 
-## **🎮 服务器列表概览**
+# 🎮 服务器列表概览
 
-以下是当前开放的 CSUFTMC 服务器信息。
+以下是当前开放的 **CSUFTMC** 服务器信息。
 
 ---
 
-### **🌲 CSUFTMC 主服务器**
-
-支持Java和基岩全部版本。CSUFTMC主服务器，支持多世界，无限拓展性，支持离线登录，提供长期支持。
-
-**生存服已于2025年12月18日迁移到此服**
-
-**连接地址 (CSUFTMC)** 
-
-
-
-| #    | 描述                   | 地址(建议依次尝试选最优线路)                             |
-| ---- | :--------------------- | :------------------------------------------------------- |
-| 1    | **自动选择(首选推荐)** | <CopyText text="csuftmc.dpdns.org" format="bold" />      |
-| 2    | 移动ipv6(直连推荐)     | <CopyText text="ipv6.csuftmc.dpdns.org" format="bold" /> |
-| 3    | 湖北三网               | <CopyText text="frp-tag.com:59465" format="bold" />      |
-| 4    | 宁波三网               | <CopyText text="frp-sun.com:23145" format="bold" />      |
-| 5    | 山东三网               | <CopyText text="frp-ten.com:46032" format="bold" />      |
-| 6    | 宁波三网(备用)         | <CopyText text="frp-oak.com:55907" format="bold" />      |
-| 7    | 山东三网(备用)         | <CopyText text="frp-art.com:40054" format="bold" />      |
-
-  <DecisionGuide 
-  size="small"
-  treeId="serverSelection" 
-  title="节点选择助手" 
-  subtitle="为你分配最快的服务器" 
+## 🌲 CSUFTMC 主服务器
+> **多世界·无限拓展·双端互通 · 离线登录支持 · 长期开放**
+<DecisionGuide 
+  treeId="serverSelection"
+  size="custom"
+  width="100%"
+  height="80px"
+  direction="row"
+  padding="0 24px"
+  gap="35px"
   icon="🚀" 
+  title="自动选择服务器地址助手"
+  subtitle="根据您的运营商和地理位置，智能匹配最佳的连接线路"
 />
+
+
+
+### 💻 Java 版连接 (PC)
+
+[<img src="https://img.shields.io/badge/点此查看-Java版进入服务器教程-blue?style=for-the-badge" style="zoom:120%;" />](./docs/Join_server.md#java-guide)
+
+| 线路类型 | 连接地址 | 建议 |
+| :--- | :--- | :--- |
+| **🚀 智能分配** | <CopyText text="csuftmc.dpdns.org" format="bold" /> | `全网首选` |
+| **🌐 移动 IPv6** | <CopyText text="ipv6.csuftmc.dpdns.org" format="bold" /> | `移动直连` |
+| **⚡ 湖北三网** | <CopyText text="frp-tag.com:59465" format="bold" /> | `华中/南方` |
+
+::: details 🔍 查看更多备用线路
+
+| 节点位置 | 连接地址 | 地区建议 |
+| :--- | :--- | :--- |
+| **⚓ 宁波三网** | <CopyText text="frp-sun.com:23145" /> | `华东/电信用户` |
+| **🏔️ 山东三网** | <CopyText text="frp-ten.com:46032" /> | `北方/联通首选` |
+| **☁️ 宁波备用** | <CopyText text="frp-oak.com:55907" /> | `华东备用` |
+| **⚙️ 山东备用** | <CopyText text="frp-art.com:40054" /> | `北方备用` |
+
+:::
+
+:::details 🛰️ 服务器地址实时状态查询
 
 <div style="display: flex; flex-wrap: wrap;  gap: 10px;">
   <!-- <ServerStatus host="frp-art.com:40054" inline /> -->
   <ServerQuery defaultHost="frp-oak.com:55907" align="left"
   :presets="[
-    { name: '自动选择', host: 'csuftmc.dpdns.org' },
+    { name: '智能分配', host: 'csuftmc.dpdns.org' },
     { name: '湖北三网', host: 'frp-tag.com:59465' },
     { name: '宁波三网', host: 'frp-sun.com:23145' },
     { name: '山东三网', host: 'frp-ten.com:46032' },
-    { name: '宁波三网(备用)', host: 'frp-oak.com:55907' },
-    { name: '山东三网(备用)', host: 'frp-art.com:40054' }
+    { name: '宁波备用', host: 'frp-oak.com:55907' },
+    { name: '山东备用', host: 'frp-art.com:40054' }
   ]" />
 </div>
-
----
-
-
-<div style="display: flex; flex-wrap: wrap; gap: 0px 10px;">
-
-
-[<img src="https://img.shields.io/badge/点此查看-文档-blue?style=for-the-badge" style="zoom:180%;" />](./docs/)
-
-
-[<img src="https://img.shields.io/badge/点此查看-排行榜-purple?style=for-the-badge" style="zoom:180%;" />](./Rankings.md)
-
-[<img src="https://img.shields.io/badge/点此查看-捐赠倡议-darkgreen?style=for-the-badge" style="zoom:180%;" />](./docs/Donation.md)
-
-[<img src="https://img.shields.io/badge/点此查看-已关闭的服务器-red?style=for-the-badge" style="zoom:180%;" />](./old_servers.md)
-</div>
-
-
-:::tip
-请在确保连接顺畅的前提下按以下顺序优先使用：1、移动ipv6直连 2、湖北三网 3、宁波三网
-
-相关名词解释
-1. IPv6 (直连)
-通过第六代协议实现端到端直接通信，路径最简且延迟最低，但要求用户网络环境支持并开启 IPv6。
-2. 三网 (通用)
-利用 BGP 协议同时接入三大运营商（电信、移动、联通）骨干网，自动调度最优路径，解决跨网互联拥塞，确保不同宽带用户均能稳定连接。
 :::
 
 ---
 
-### 👥近期主要玩家
+### 📱 基岩版连接 (手机/Win)
+[<img src="https://img.shields.io/badge/点此查看-基岩版进入服务器教程-blue?style=for-the-badge" style="zoom:120%;" />](./docs/Join_server.md#bedrock-guide)
+| 线路名称 | 服务器地址 | 端口 | 建议 |
+| :--- | :--- | :--- | :--- |
+| **🚀 IPv6 直连** | <CopyText text="ipv6.csuftmc.dpdns.org" format="bold" /> | <CopyText text="19132" format="bold" /> | `流量用户推荐` |
+| **⚡ 湖北三网** | <CopyText text="frp-tag.com" format="bold" /> | <CopyText text="59465" format="bold" /> | `通用稳定线路` |
 
+
+
+
+---
+
+::: details 📘 点击查看：名词解释与连接建议
+##### 📚 相关名词解释
+* **IPv6 (直连)**: 路径最简且延迟最低，要求用户网络环境支持 IPv6。
+* **三网 (通用)**: 接入三大运营商骨干网，自动调度最优路径，解决跨网拥塞。
+
+##### 💡 优先顺序建议
+1. **移动 IPv6 直连**：低延迟首选。
+2. **智能分配/湖北三网**：跨网首选，适配大部分环境。
+3. **分地区备用**：北方玩家首选 **山东** 节点，南方玩家首选 **宁波** 节点。
+:::
+
+
+
+## 🔗 快捷链接
+
+<div style="display: flex; flex-wrap: wrap; gap: 0px 10px;">
+
+
+[<img src="https://img.shields.io/badge/点此查看-文档-blue?style=for-the-badge" style="zoom:160%;" />](./docs/)
+
+
+[<img src="https://img.shields.io/badge/点此查看-排行榜-purple?style=for-the-badge" style="zoom:160%;" />](./Rankings.md)
+
+[<img src="https://img.shields.io/badge/点此查看-捐赠倡议-darkgreen?style=for-the-badge" style="zoom:160%;" />](./docs/Donation.md)
+
+[<img src="https://img.shields.io/badge/点此查看-已关闭的服务器-red?style=for-the-badge" style="zoom:160%;" />](./old_servers.md)
+</div>
+
+---
+
+## 👥 近期活跃玩家
 <PlayerList />
 
+<style>
+.server-container {
+  background: var(--c-bg-light);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin: 1rem 0;
+  border: 1px solid var(--c-border);
+}
 
+.server-container h3 {
+  margin-top: 0;
+  border-bottom: 2px solid var(--c-brand);
+  display: inline-block;
+  padding-bottom: 4px;
+  color: var(--c-text-accent);
+}
+
+/* 优化折叠框内的表格边距与风格 */
+details {
+  background: rgba(128, 128, 128, 0.05);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--c-brand);
+}
+
+details table {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+/* 移动端表格优化 */
+@media (max-width: 719px) {
+  .server-container {
+    padding: 1rem;
+  }
+}
+</style>
 
 <script setup>
 import PlayerList from "@source/.vuepress/components/PlayerList.vue";

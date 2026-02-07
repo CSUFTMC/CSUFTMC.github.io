@@ -1,6 +1,6 @@
 ---
 title: 已关闭的服务器
-icon: server
+icon: box-archive
 comment: false
 ---
 

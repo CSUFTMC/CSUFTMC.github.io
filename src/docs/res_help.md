@@ -1,6 +1,6 @@
 ---
 title: 领地插件教程
-icon: object-group
+icon: map-location-dot
 order: 7
 
 ---
