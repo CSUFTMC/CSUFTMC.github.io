@@ -4,20 +4,20 @@ export const playerGroups = {
     {
       username: "Ceceport",
       joinDate: "2025-11-18",
-      role: "Admin",
+      role: "管理员",
       desc: "现任服主，运行和维护服务器。",
       customInfo: [{ label: '职位', value: '服务器管理员' }, { label: '状态', value: '活跃' }]
     },
     {
       username: "Aragron_",
-      role: "Admin",
+      role: "管理员",
       joinDate: "2025-11-18",
       desc: "服务器管理员兼QQ群群主。",
       customInfo: [{ label: '职位', value: '服务器管理员' }, { label: '状态', value: '佛系' }]
     },
     {
       username: "Declan",
-      role: "Admin",
+      role: "管理员",
       joinDate: "2025-11-18",
       desc: "上一任服务器服主。",
       customInfo: [{ label: '职位', value: '退休干部' }, { label: '状态', value: '佛系' }]
@@ -49,6 +49,11 @@ export const playerGroups = {
       customInfo: [{ label: '状态', value: '佛系' }]
     },
     {
+      username: "LEEKUNJIE",
+      joinDate: "2025-11-18",
+      customInfo: [{ label: '状态', value: '活跃' }]
+    },
+      {
       username: "LiUAuXe",
       joinDate: "2025-11-19",
       customInfo: [{ label: '状态', value: '佛系' }]
