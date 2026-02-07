@@ -245,7 +245,7 @@ footer: false
         立即加入 QQ 群 (996072712)
       </a>
       <a 
-        href="./servers.md" 
+        href="https://www.csuftmc.dpdns.org/servers.html" 
         class="g-btn-outline"
       >
         直接加入服务器
