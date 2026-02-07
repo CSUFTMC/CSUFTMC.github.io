@@ -44,8 +44,8 @@ photoSwipe: false
 
 | 节点位置 | 连接地址 | 地区建议 |
 | :--- | :--- | :--- |
-| **⚓ 宁波三网** | <CopyText text="frp-sun.com:23145" /> | `华东/电信用户` |
-| **🏔️ 山东三网** | <CopyText text="frp-ten.com:46032" /> | `北方/联通首选` |
+| **⚓ 宁波三网** | <CopyText text="frp-sun.com:23145" /> | `华东、东部沿海` |
+| **🏔️ 山东三网** | <CopyText text="frp-ten.com:46032" /> | `北方首选` |
 | **☁️ 宁波备用** | <CopyText text="frp-oak.com:55907" /> | `华东备用` |
 | **⚙️ 山东备用** | <CopyText text="frp-art.com:40054" /> | `北方备用` |
 
@@ -74,7 +74,7 @@ photoSwipe: false
 | 线路名称 | 服务器地址 | 端口 | 建议 |
 | :--- | :--- | :--- | :--- |
 | **🚀 IPv6 直连** | <CopyText text="ipv6.csuftmc.dpdns.org" format="bold" /> | <CopyText text="19132" format="bold" /> | `流量用户推荐` |
-| **⚡ 湖北三网** | <CopyText text="frp-tag.com" format="bold" /> | <CopyText text="59465" format="bold" /> | `通用稳定线路` |
+| **⚡ 湖北三网** | <CopyText text="frp-tag.com" format="bold" /> | <CopyText text="26789" format="bold" /> | `通用稳定线路` |
 
 
 
