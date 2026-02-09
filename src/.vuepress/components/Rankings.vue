@@ -58,7 +58,7 @@
         </div>
       </div>
 
-      <div class="update-footer">(每30分钟更新一次) 最后更新于: {{ lastUpdated }}</div>
+      <div class="update-footer">(每小时更新一次) 最后更新于: {{ lastUpdated }}</div>
     </div>
 
     <McProfile
