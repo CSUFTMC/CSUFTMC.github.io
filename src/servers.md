@@ -11,6 +11,10 @@ photoSwipe: false
 
 以下是当前开放的 **CSUFTMC** 服务器信息。
 
+点击下方对应的快速跳转链接：
+
+👉 [主服务器-Java](#CSUFTserver-Java)  |  [主服务器-基岩](#CSUFTserver-Be)  | [寒假模组服](#winserver)
+
 ---
 
 ## 🌲 CSUFTMC 主服务器
@@ -30,7 +34,7 @@ photoSwipe: false
 
 
 
-### 💻 Java 版连接 (PC)
+### 💻 Java 版连接 (PC) {#CSUFTserver-Java}
 
 [<img src="https://img.shields.io/badge/点此查看-Java版进入服务器教程-blue?style=for-the-badge" style="zoom:120%;" />](./docs/Join_server.md#java-guide)
 
@@ -39,37 +43,16 @@ photoSwipe: false
 | **🚀 智能分配** | <CopyText text="csuftmc.dpdns.org" format="bold" /> | `全网首选` |
 | **🌐 移动 IPv6** | <CopyText text="ipv6.csuftmc.dpdns.org" format="bold" /> | `移动直连` |
 | **⚡ 湖北三网** | <CopyText text="frp-tag.com:59465" format="bold" /> | `华中/南方` |
-
-::: details 🔍 查看更多备用线路
-
-| 节点位置 | 连接地址 | 地区建议 |
-| :--- | :--- | :--- |
 | **⚓ 宁波三网** | <CopyText text="frp-sun.com:23145" /> | `华东、东部沿海` |
 | **🏔️ 山东三网** | <CopyText text="frp-ten.com:46032" /> | `北方首选` |
 | **☁️ 宁波备用** | <CopyText text="frp-oak.com:55907" /> | `华东备用` |
 | **⚙️ 山东备用** | <CopyText text="frp-art.com:40054" /> | `北方备用` |
 
-:::
 
-:::details 🛰️ 服务器地址实时状态查询
-
-<div style="display: flex; flex-wrap: wrap;  gap: 10px;">
-  <!-- <ServerStatus host="frp-art.com:40054" inline /> -->
-  <ServerQuery defaultHost="frp-oak.com:55907" align="left"
-  :presets="[
-    { name: '智能分配', host: 'csuftmc.dpdns.org' },
-    { name: '湖北三网', host: 'frp-tag.com:59465' },
-    { name: '宁波三网', host: 'frp-sun.com:23145' },
-    { name: '山东三网', host: 'frp-ten.com:46032' },
-    { name: '宁波备用', host: 'frp-oak.com:55907' },
-    { name: '山东备用', host: 'frp-art.com:40054' }
-  ]" />
-</div>
-:::
 
 ---
 
-### 📱 基岩版连接 (手机/Win)
+### 📱 基岩版连接 (手机/Win) {#CSUFTserver-Be}
 [<img src="https://img.shields.io/badge/点此查看-基岩版进入服务器教程-blue?style=for-the-badge" style="zoom:120%;" />](./docs/Join_server.md#bedrock-guide)
 | 线路名称 | 服务器地址 | 端口 | 建议 |
 | :--- | :--- | :--- | :--- |
@@ -81,6 +64,36 @@ photoSwipe: false
 
 ---
 
+
+
+## 🌲 寒假模组服 {#winserver}
+
+> **冒险向·老玩家带队·不肝难度 · 不卷进度**
+
+| 线路类型 | 连接地址 | 建议 |
+| :--- | :--- | :--- |
+| **🚀 湖北三网** | <CopyText text="frp-tag.com:50556" format="bold" /> | `全网首选` |
+| **🌐 移动 IPv6** | <CopyText text="ipv6.csuftmc.dpdns.org:6666" format="bold" /> | `移动直连` |
+| **⚡ 宁波三网** | <CopyText text="frp-oak.com:11280" format="bold" /> | `华中/南方` |
+
+
+
+:::details 🛰️ 服务器地址实时状态查询
+
+<div style="display: flex; flex-wrap: wrap;  gap: 10px;">
+  <!-- <ServerStatus host="frp-art.com:40054" inline /> -->
+  <ServerQuery defaultHost="frp-oak.com:55907" align="left"
+  :presets="[
+    { name: '智能分配', host: 'csuftmc.dpdns.org' },
+    { name: '湖北三网', host: 'frp-tag.com:59465' },
+    { name: '宁波三网', host: 'frp-sun.com:23145' },
+    { name: '山东三网', host: 'frp-ten.com:46032' },
+    { name: '模组服-湖北', host: 'frp-tag.com:50556' },
+    { name: '模组服-宁波', host: 'frp-oak.com:11280' }
+  ]" />
+</div>
+:::
+
 ::: details 📘 点击查看：名词解释与连接建议
 ##### 📚 相关名词解释
 * **IPv6 (直连)**: 路径最简且延迟最低，要求用户网络环境支持 IPv6。
@@ -91,8 +104,6 @@ photoSwipe: false
 2. **智能分配/湖北三网**：跨网首选，适配大部分环境。
 3. **分地区备用**：北方玩家首选 **山东** 节点，南方玩家首选 **宁波** 节点。
 :::
-
-
 
 ## 🔗 快捷链接
 
