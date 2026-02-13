@@ -2,7 +2,15 @@
 title: 信息一览
 icon: circle-info
 order: 1
-
+category:
+  - 服务器
+  - 概览
+tag:
+  - 信息
+  - CSUFTMC
+  - 管理员
+  - 团队
+  - 联系方式
 ---
 
 ## CSUFTMC信息一览

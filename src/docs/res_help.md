@@ -2,7 +2,15 @@
 title: 领地插件教程
 icon: map-location-dot
 order: 7
-
+category:
+  - 教程
+  - 领地
+tag:
+  - Residence
+  - 插件
+  - 保护
+  - 安全
+  - 指令
 ---
 
 # 🏡 领地 (Residence) 玩家指南

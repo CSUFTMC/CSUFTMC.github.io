@@ -2,6 +2,15 @@
 title: 语音 Mod 安装指引
 icon: microphone
 order: 6
+category:
+  - 教程
+  - Mod
+tag:
+  - 语音
+  - Simple Voice Chat
+  - 安装
+  - Fabric
+  - 故障排除
 ---
 
 # 🎤 语音系统配置 (Simple Voice Chat)

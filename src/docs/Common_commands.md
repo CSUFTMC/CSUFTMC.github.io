@@ -2,6 +2,19 @@
 title: 常用玩家指令
 icon: terminal
 order: 5
+category:
+  - 教程
+  - 指令
+tag:
+  - 玩家
+  - 服务器
+  - AuthMe
+  - Residence
+  - QuickShop
+  - 经济
+  - 传送
+  - 技能
+  - 安全
 ---
 
 # ⌨️ 玩家指令百科

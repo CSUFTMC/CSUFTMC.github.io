@@ -2,6 +2,14 @@
 title: 玩家守则
 icon: scale-balanced 
 order: 2
+category:
+  - 服务器
+  - 守则
+tag:
+  - 规则
+  - 行为准则
+  - 社区
+  - 管理
 ---
 
 # 📜 玩家守则 (必读)

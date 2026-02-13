@@ -2,6 +2,15 @@
 title: 加入服务器
 icon: door-open
 order: 4
+category:
+  - 教程
+  - 联机
+tag:
+  - Java版
+  - 基岩版
+  - 服务器
+  - 连接
+  - 新手
 ---
 
 # 🎮 联机进入指引

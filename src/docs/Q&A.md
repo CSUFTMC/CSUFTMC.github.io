@@ -2,7 +2,17 @@
 title: 常见问题解答
 icon: circle-question
 order: 100
-
+category:
+  - 教程
+  - 问题解决
+tag:
+  - 卡顿
+  - 性能
+  - TPS
+  - Ping
+  - FPS
+  - 优化
+  - 常见问题
 ---
 
 ::: tip 

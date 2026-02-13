@@ -2,7 +2,15 @@
 title: 商店教程
 icon: cart-shopping
 order: 8
-
+category:
+  - 教程
+  - 经济
+tag:
+  - 商店
+  - 交易
+  - QuickShop
+  - GlobalShop
+  - 指令
 ---
 
 # 💰 商店教程
