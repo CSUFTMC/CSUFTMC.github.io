@@ -13,12 +13,13 @@ photoSwipe: false
 
 点击下方对应的快速跳转链接：
 
-👉 [主服务器-Java](#CSUFTserver-Java)  |  [主服务器-基岩](#CSUFTserver-Be)  | [寒假模组服](#winserver)
+👉 [主服务器-Java](#CSUFTserver-Java)  |  [主服务器-基岩](#CSUFTserver-Be)  | [寒假模组服](#winserver) <!-- bot-skip -->
 
 ---
 
 ## 🌲 CSUFTMC 主服务器
 > **多世界·无限拓展·双端互通 · 离线登录支持 · 长期开放**
+<!-- bot-block-start -->
 <DecisionGuide 
   treeId="serverSelection"
   size="custom"
@@ -31,6 +32,7 @@ photoSwipe: false
   title="自动选择服务器地址助手"
   subtitle="根据您的运营商和地理位置，智能匹配最佳的连接线路"
 />
+<!-- bot-block-end -->
 
 
 
@@ -78,6 +80,7 @@ photoSwipe: false
 
 
 
+<!-- bot-block-start -->
 :::details 🛰️ 服务器地址实时状态查询
 
 <div style="display: flex; flex-wrap: wrap;  gap: 10px;">
@@ -93,6 +96,7 @@ photoSwipe: false
   ]" />
 </div>
 :::
+<!-- bot-block-end -->
 
 ::: details 📘 点击查看：名词解释与连接建议
 ##### 📚 相关名词解释
@@ -105,7 +109,7 @@ photoSwipe: false
 3. **分地区备用**：北方玩家首选 **山东** 节点，南方玩家首选 **宁波** 节点。
 :::
 
-## 🔗 快捷链接
+## 🔗 快捷链接 <!-- bot-skip-section -->
 
 <div style="display: flex; flex-wrap: wrap; gap: 0px 10px;">
 
@@ -122,7 +126,7 @@ photoSwipe: false
 
 ---
 
-## 👥 近期活跃玩家
+## 👥 近期活跃玩家 <!-- bot-skip-section -->
 <PlayerList />
 
 <style>
