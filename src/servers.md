@@ -129,6 +129,7 @@ photoSwipe: false
 ## 👥 近期活跃玩家 <!-- bot-skip-section -->
 <PlayerList />
 
+<!-- bot-block-start -->
 <style>
 .server-container {
   background: var(--c-bg-light);
@@ -172,7 +173,9 @@ details table {
   }
 }
 </style>
+<!-- bot-block-end -->
 
+<!-- bot-block-start -->
 <script setup>
 import PlayerList from "@source/.vuepress/components/PlayerList.vue";
 import ServerStatus from "@source/.vuepress/components/ServerStatus.vue";
@@ -181,3 +184,4 @@ import ServerQuery from "@source/.vuepress/components/ServerQuery.vue";
 import McProfile from "@source/.vuepress/components/McProfile.vue";
 import DecisionGuide from "@source/.vuepress/components/DecisionGuide.vue";
 </script>
+<!-- bot-block-end -->
