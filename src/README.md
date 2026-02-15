@@ -17,7 +17,7 @@ actions:
     link: "#join-us"
     type: primary
   - text: 服务器
-    link: ./servers.md
+    link: ./服务器.md
     icon: server
     type: primary
   - text: 文档
@@ -34,7 +34,7 @@ config:
       chip: "服务器"
       chipClass: "green"
       img: "/assets/image/a01.webp"
-      link: "https://www.csuftmc.dpdns.org/servers.html"
+      link: "https://www.csuftmc.dpdns.org/服务器.html"
 
 
     - type: medium
@@ -122,7 +122,7 @@ config:
   # 4. 常见问题 (FAQ)
   faq:
     - q: "如何加入服务器？"
-      a: "只需简单三步：<br>1. 前往<a href='https://www.csuftmc.dpdns.org/servers.html' target='_blank'  rel='noopener noreferrer'>服务器列表</a>复制服务器地址；<br>2. 在 Minecraft 客户端点击「多人游戏」-「添加服务器」；<br>3. 填入地址并保存，点击进入即可开启旅程。初次进入请记得查看群公告完成绑定。"
+      a: "只需简单三步：<br>1. 前往<a href='https://www.csuftmc.dpdns.org/服务器.html' target='_blank'  rel='noopener noreferrer'>服务器列表</a>复制服务器地址；<br>2. 在 Minecraft 客户端点击「多人游戏」-「添加服务器」；<br>3. 填入地址并保存，点击进入即可开启旅程。初次进入请记得查看群公告完成绑定。"
       open: true
     - q: "对客户端版本有要求吗？"
       a: "原生支持 Java 1.21.10，同时兼容Java 1.18-1.21.10。"
@@ -131,7 +131,7 @@ config:
     - q: "我必须是社区成员或本校学生吗？"
       a: "完全不必。我们欢迎任何同好加入我们。是否加入社区取决于你的选择。但无论如何我们都欢迎你随时一起玩。" 
     - q: "我可以为社区工作做贡献吗？"
-      a: "当然。我们非常期待有才华、有热情的伙伴加入建设。无论是技术支持、建筑创作还是资金赞助，我们都由衷感谢。请 <a href='https://www.csuftmc.dpdns.org/docs/Overview.html'  target='_blank'  rel='noopener noreferrer'>点击此处查看负责人</a>或<a href='https://www.csuftmc.dpdns.org/docs/Donation.html'  target='_blank'  rel='noopener noreferrer'>点击此处查看贡献指南</a>。"            
+      a: "当然。我们非常期待有才华、有热情的伙伴加入建设。无论是技术支持、建筑创作还是资金赞助，我们都由衷感谢。请 <a href='https://www.csuftmc.dpdns.org/docs/概览.html'  target='_blank'  rel='noopener noreferrer'>点击此处查看负责人</a>或<a href='https://www.csuftmc.dpdns.org/docs/捐赠.html'  target='_blank'  rel='noopener noreferrer'>点击此处查看贡献指南</a>。"            
   
   # 5. 贡献者 (Contributors) - 修改为简单的用户名列表
   # 直接在这里添加名字，下方的 PlayerList 组件会自动读取并展示
@@ -147,11 +147,11 @@ config:
     about: "中南林 Minecraft 爱好者社区。不删档、不换周目，不肝不氪的纯生存养老服务器，支持离线登录。"
     links:
       - text: "服务器列表"
-        url: "https://www.csuftmc.dpdns.org/servers.html"
+        url: "https://www.csuftmc.dpdns.org/服务器.html"
       - text: "安装教程"
-        url: "https://www.csuftmc.dpdns.org/docs/Installation_instructions.html"
+        url: "https://www.csuftmc.dpdns.org/docs/安装.html"
       - text: "捐赠方式"
-        url: "https://www.csuftmc.dpdns.org/docs/Donation.html"
+        url: "https://www.csuftmc.dpdns.org/docs/捐赠.html"
     contact:
       addr: "csuftmc.dpdns.org"
       douyin: "CSUFTMC"
@@ -246,7 +246,7 @@ footer: false
         立即加入 QQ 群 (996072712)
       </a>
       <a 
-        href="https://www.csuftmc.dpdns.org/servers.html" 
+        href="https://www.csuftmc.dpdns.org/服务器.html" 
         class="g-btn-outline"
       >
         直接加入服务器

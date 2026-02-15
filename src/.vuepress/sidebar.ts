@@ -3,7 +3,7 @@ import { sidebar } from "vuepress-theme-hope";
 export default sidebar({
   "/": [
     // "",
-    "old_servers",
+    "历史服务器",
     {
       text: "文档",
       icon: "laptop-code",
