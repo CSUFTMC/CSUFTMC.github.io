@@ -160,6 +160,7 @@ copyright: false
 footer: false
 ---
 
+<!-- bot-block-start -->
 <div class="g-section">
   <h2 class="g-title">🧭 探索与发现</h2>
   <div class="bento-grid">
@@ -276,10 +277,8 @@ footer: false
   </div>
 </footer>
 
-
-
-
 <script setup>
 import PlayerList from "@source/.vuepress/components/PlayerList.vue";
 import McProfile from "@source/.vuepress/components/McProfile.vue";
 </script>
+<!-- bot-block-end -->

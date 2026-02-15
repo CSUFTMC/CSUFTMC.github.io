@@ -23,8 +23,11 @@ tag:
 | ~~服务器3~~    | ~~模组服(脆骨症 1.19.2)~~         | 暂停运行  |
 | QQ群           | [996072712](https://qun.qq.com/universal-share/share?ac=1&authKey=yVPMC4Gm%2BCkgx%2BUhudMJ1AA/xL9aEuulnPURbd4dxLoQH3nZKgVglRqJ1UHt08e/&busi_data=eyJncm91cENvZGUiOiI5OTYwNzI3MTIiLCJ0b2tlbiI6ImVlT25iaGR4MFlLMTd6S3BQZ1BFRFRldlYzVFIwcXRoNFR2dkVaeU83NW5TenFqSURuK2N3NWcyaEt1MGd2WkkiLCJ1aW4iOiIzOTgyOTQ4NDcxIn0=&data=VG6c1ZLBB15XLTc24BsY1a3W3-Xn2T3uVTuLVPwSxZwPLaeTBU968bP7HjlXcP9cR97oOOczfp4bi-v590f5YWR6NpvX9qycwEDDagbdlSo&svctype=5&tempid=h5_group_info) |                    |
 | 服务器认证方式 | AuthMe离线认证                 |                    |
+<!-- bot-block-start -->
 | 服务器管理员   | <PlayerList username="Ceceport,Declan,Aragron_" size="small" />  |        |
+<!-- bot-block-end -->
 
+<!-- bot-block-start -->
 | 部门 | 负责人 |
 | :--- | :--- |
 | **技术组** | <PlayerList username="Ceceport,Declan" size="small" /> |
@@ -34,3 +37,4 @@ tag:
 <script setup>
 import PlayerList from "@source/.vuepress/components/PlayerList.vue";
 </script>
+<!-- bot-block-end -->

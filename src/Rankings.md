@@ -9,6 +9,7 @@ tagline: false
 
 ---
 
+<!-- bot-block-start -->
 <ClientOnly>
   <Rankings />
 </ClientOnly>
@@ -16,3 +17,4 @@ tagline: false
 <script setup>
 import Rankings from "@source/.vuepress/components/Rankings.vue";
 </script>
+<!-- bot-block-end -->

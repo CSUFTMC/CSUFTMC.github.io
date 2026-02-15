@@ -10,5 +10,6 @@ tag:
   - 首页
 ---
 
+<!-- bot-block-start -->
 <Catalog />
-
+<!-- bot-block-end -->
