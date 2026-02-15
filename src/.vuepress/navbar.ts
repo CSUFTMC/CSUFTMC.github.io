@@ -2,8 +2,8 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
-  "/服务器",
-  "/排行榜",
+  "/servers",
+  "/ranks",
   "/docs/",
   // {
   //   text: "指南",

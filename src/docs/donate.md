@@ -37,7 +37,7 @@ tag:
 
 > **再次声明：** 捐赠并非强制，捐赠与否都不影响任何游戏功能。
 >
-> ![Donation](捐赠.assets\Donation.jpg)
+> ![Donation](donate.assets\Donation.jpg)
 
 ---
 

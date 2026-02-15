@@ -38,7 +38,7 @@ photoSwipe: false
 
 ### 💻 Java 版连接 (PC) {#CSUFTserver-Java}
 
-[<img src="https://img.shields.io/badge/点此查看-Java版进入服务器教程-blue?style=for-the-badge" style="zoom:120%;" />](./docs/加入.md#java-guide)
+[<img src="https://img.shields.io/badge/点此查看-Java版进入服务器教程-blue?style=for-the-badge" style="zoom:120%;" />](./docs/join.md#java-guide)
 
 | 线路类型 | 连接地址 | 建议 |
 | :--- | :--- | :--- |
@@ -55,7 +55,7 @@ photoSwipe: false
 ---
 
 ### 📱 基岩版连接 (手机/Win) {#CSUFTserver-Be}
-[<img src="https://img.shields.io/badge/点此查看-基岩版进入服务器教程-blue?style=for-the-badge" style="zoom:120%;" />](./docs/加入.md#bedrock-guide)
+[<img src="https://img.shields.io/badge/点此查看-基岩版进入服务器教程-blue?style=for-the-badge" style="zoom:120%;" />](./docs/join.md#bedrock-guide)
 | 线路名称 | 服务器地址 | 端口 | 建议 |
 | :--- | :--- | :--- | :--- |
 | **🚀 IPv6 直连** | <CopyText text="ipv6.csuftmc.dpdns.org" format="bold" /> | <CopyText text="19132" format="bold" /> | `流量用户推荐` |
@@ -118,11 +118,11 @@ photoSwipe: false
 [<img src="https://img.shields.io/badge/点此查看-文档-blue?style=for-the-badge" style="zoom:160%;" />](./docs/)
 
 
-[<img src="https://img.shields.io/badge/点此查看-排行榜-purple?style=for-the-badge" style="zoom:160%;" />](./排行榜.md)
+[<img src="https://img.shields.io/badge/点此查看-排行榜-purple?style=for-the-badge" style="zoom:160%;" />](./ranks.md)
 
-[<img src="https://img.shields.io/badge/点此查看-捐赠倡议-darkgreen?style=for-the-badge" style="zoom:160%;" />](./docs/捐赠.md)
+[<img src="https://img.shields.io/badge/点此查看-捐赠倡议-darkgreen?style=for-the-badge" style="zoom:160%;" />](./docs/donate.md)
 
-[<img src="https://img.shields.io/badge/点此查看-已关闭的服务器-red?style=for-the-badge" style="zoom:160%;" />](./历史服务器.md)
+[<img src="https://img.shields.io/badge/点此查看-已关闭的服务器-red?style=for-the-badge" style="zoom:160%;" />](./history.md)
 </div>
 <!-- bot-block-end -->
 
