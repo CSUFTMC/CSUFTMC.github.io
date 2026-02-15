@@ -109,7 +109,8 @@ photoSwipe: false
 3. **分地区备用**：北方玩家首选 **山东** 节点，南方玩家首选 **宁波** 节点。
 :::
 
-## 🔗 快捷链接 <!-- bot-skip-section -->
+<!-- bot-block-start -->
+## 🔗 快捷链接
 
 <div style="display: flex; flex-wrap: wrap; gap: 0px 10px;">
 
@@ -123,11 +124,14 @@ photoSwipe: false
 
 [<img src="https://img.shields.io/badge/点此查看-已关闭的服务器-red?style=for-the-badge" style="zoom:160%;" />](./old_servers.md)
 </div>
+<!-- bot-block-end -->
 
 ---
 
-## 👥 近期活跃玩家 <!-- bot-skip-section -->
+<!-- bot-block-start -->
+## 👥 近期活跃玩家
 <PlayerList />
+<!-- bot-block-end -->
 
 <!-- bot-block-start -->
 <style>
