@@ -20,6 +20,9 @@ photoSwipe: false
 ## 🌲 CSUFTMC 主服务器
 > **多世界·无限拓展·双端互通 · 离线登录支持 · 长期开放**
 <!-- bot-block-start -->
+
+[<img src="https://img.shields.io/badge/点此查看-主服务器网页地图-darkgreen?style=for-the-badge" style="zoom:150%;" />](http://frp-add.com:60388/)
+
 <DecisionGuide 
   treeId="serverSelection"
   size="custom"
@@ -37,9 +40,9 @@ photoSwipe: false
 
 
 ### 💻 Java 版连接 (PC) {#CSUFTserver-Java}
-
-[<img src="https://img.shields.io/badge/点此查看-Java版进入服务器教程-blue?style=for-the-badge" style="zoom:120%;" />](./docs/join.md#java-guide)
-
+<!-- bot-block-start -->
+> [<img src="https://img.shields.io/badge/点此查看-Java版进入服务器教程-blue?style=for-the-badge" style="zoom:120%;" />](./docs/join.md#java-guide)
+<!-- bot-block-end -->
 | 线路类型 | 连接地址 | 建议 |
 | :--- | :--- | :--- |
 | **🚀 智能分配** | <CopyText text="csuftmc.dpdns.org" format="bold" /> | `全网首选` |
@@ -55,7 +58,9 @@ photoSwipe: false
 ---
 
 ### 📱 基岩版连接 (手机/Win) {#CSUFTserver-Be}
-[<img src="https://img.shields.io/badge/点此查看-基岩版进入服务器教程-blue?style=for-the-badge" style="zoom:120%;" />](./docs/join.md#bedrock-guide)
+<!-- bot-block-start -->
+> [<img src="https://img.shields.io/badge/点此查看-基岩版进入服务器教程-blue?style=for-the-badge" style="zoom:120%;" />](./docs/join.md#bedrock-guide)
+<!-- bot-block-end -->
 | 线路名称 | 服务器地址 | 端口 | 建议 |
 | :--- | :--- | :--- | :--- |
 | **🚀 IPv6 直连** | <CopyText text="ipv6.csuftmc.dpdns.org" format="bold" /> | <CopyText text="19132" format="bold" /> | `流量用户推荐` |
@@ -71,6 +76,7 @@ photoSwipe: false
 ## 🌲 寒假模组服 {#winserver}
 
 > **冒险向·老玩家带队·不肝难度 · 不卷进度**
+> **提示：进群获取整合包文件**
 
 | 线路类型 | 连接地址 | 建议 |
 | :--- | :--- | :--- |
@@ -81,21 +87,21 @@ photoSwipe: false
 
 
 <!-- bot-block-start -->
-:::details 🛰️ 服务器地址实时状态查询
+<details open>
+  <summary style="cursor: pointer; font-weight: bold;">🛰️ 服务器地址实时状态查询</summary>
 
-<div style="display: flex; flex-wrap: wrap;  gap: 10px;">
-  <!-- <ServerStatus host="frp-art.com:40054" inline /> -->
-  <ServerQuery defaultHost="frp-oak.com:55907" align="left"
-  :presets="[
-    { name: '智能分配', host: 'csuftmc.dpdns.org' },
-    { name: '湖北三网', host: 'frp-tag.com:59465' },
-    { name: '宁波三网', host: 'frp-sun.com:23145' },
-    { name: '山东三网', host: 'frp-ten.com:46032' },
-    { name: '模组服-湖北', host: 'frp-tag.com:50556' },
-    { name: '模组服-宁波', host: 'frp-oak.com:11280' }
-  ]" />
-</div>
-:::
+  <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+    <ServerQuery defaultHost="frp-oak.com:55907" align="left"
+      :presets="[
+        { name: '智能分配', host: 'csuftmc.dpdns.org' },
+        { name: '湖北三网', host: 'frp-tag.com:59465' },
+        { name: '宁波三网', host: 'frp-sun.com:23145' },
+        { name: '山东三网', host: 'frp-ten.com:46032' },
+        { name: '模组服-湖北', host: 'frp-tag.com:50556' },
+        { name: '模组服-宁波', host: 'frp-oak.com:11280' }
+      ]" />
+  </div>
+</details>
 <!-- bot-block-end -->
 
 ::: details 📘 点击查看：名词解释与连接建议
