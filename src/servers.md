@@ -20,8 +20,14 @@ photoSwipe: false
 ## 🌲 CSUFTMC 主服务器
 > **多世界·无限拓展·双端互通 · 离线登录支持 · 长期开放**
 <!-- bot-block-start -->
+<div style="display: flex; flex-wrap: wrap; gap: 0px 10px;">
 
 [<img src="https://img.shields.io/badge/点此查看-主服务器网页地图-darkgreen?style=for-the-badge" style="zoom:150%;" />](http://frp-add.com:60388/)
+
+[<img src="https://img.shields.io/badge/点此查看-机器、建筑一览表-darkgreen?style=for-the-badge" style="zoom:150%;" />](https://docs.qq.com/sheet/DZUJPU3FWcHBwemxx?tab=BB08J2)
+
+</div>
+
 
 <DecisionGuide 
   treeId="serverSelection"
@@ -39,6 +45,7 @@ photoSwipe: false
 
 
 
+
 ### 💻 Java 版连接 (PC) {#CSUFTserver-Java}
 <!-- bot-block-start -->
 > [<img src="https://img.shields.io/badge/点此查看-Java版进入服务器教程-blue?style=for-the-badge" style="zoom:120%;" />](./docs/join.md#java-guide)
@@ -51,7 +58,7 @@ photoSwipe: false
 | **⚓ 宁波三网** | <CopyText text="frp-sun.com:23145" /> | `华东、东部沿海` |
 | **🏔️ 山东三网** | <CopyText text="frp-ten.com:46032" /> | `北方首选` |
 | **☁️ 宁波备用** | <CopyText text="frp-oak.com:55907" /> | `华东备用` |
-| **⚙️ 山东备用** | <CopyText text="frp-art.com:40054" /> | `北方备用` |
+<!-- | **⚙️ 山东备用** | <CopyText text="frp-art.com:40054" /> | `北方备用` | -->
 
 
 
