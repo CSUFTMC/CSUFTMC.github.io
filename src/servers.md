@@ -13,7 +13,7 @@ photoSwipe: false
 
 点击下方对应的快速跳转链接：
 
-👉 [主服务器-Java](#CSUFTserver-Java)  |  [主服务器-基岩](#CSUFTserver-Be)  | [寒假模组服](#winserver) <!-- bot-skip -->
+👉 [主服务器-Java](#CSUFTserver-Java)  |  [主服务器-基岩](#CSUFTserver-Be)<!-- bot-skip -->
 
 ---
 
@@ -78,18 +78,6 @@ photoSwipe: false
 
 ---
 
-
-
-## 🌲 寒假模组服 {#winserver}
-
-> **冒险向·老玩家带队·不肝难度 · 不卷进度**
-> **提示：进群获取整合包文件**
-
-| 线路类型 | 连接地址 | 建议 |
-| :--- | :--- | :--- |
-| **🚀 湖北三网** | <CopyText text="frp-tag.com:50556" format="bold" /> | `全网首选` |
-| **🌐 移动 IPv6** | <CopyText text="ipv6.csuftmc.dpdns.org:6666" format="bold" /> | `移动直连` |
-| **⚡ 宁波三网** | <CopyText text="frp-oak.com:11280" format="bold" /> | `华中/南方` |
 
 
 
