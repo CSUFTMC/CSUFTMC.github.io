@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20 14:24:27",
+  "last_updated": "2026-03-20 14:25:52",
   "data": {
     "总榜": [
       {
@@ -355,13 +355,13 @@
           {
             "uuid": "075a3de3-60db-4be5-9eef-adc7757d4cab",
             "name": "_002",
-            "raw_value": 1832803,
-            "display_value": "25.46 小时",
+            "raw_value": 1838803,
+            "display_value": "25.54 小时",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 1832803
+                "value": 1838803
               }
             ]
           },
