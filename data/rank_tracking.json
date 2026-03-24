@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-24 14:57:39",
+  "last_updated": "2026-03-24 15:57:39",
   "data": {
     "总排行榜": [
       {
@@ -197,13 +197,13 @@
           {
             "uuid": "3d68d250-0931-318a-a9dd-ecf43c24514a",
             "name": "mulingyehua",
-            "raw_value": 8885871,
-            "display_value": "123.41 小时",
+            "raw_value": 8803571,
+            "display_value": "122.27 小时",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 8757357
+                "value": 8675057
               },
               {
                 "source": "生存",
@@ -266,13 +266,13 @@
           {
             "uuid": "5a4786d5-00f0-4ab5-8dc6-8bf154d12c0d",
             "name": "_aasd",
-            "raw_value": 7842375,
-            "display_value": "108.92 小时",
+            "raw_value": 7914375,
+            "display_value": "109.92 小时",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 6432117
+                "value": 6504117
               },
               {
                 "source": "生存",
@@ -371,13 +371,13 @@
           {
             "uuid": "0fa473f5-d466-4b41-acc9-87c86cadede0",
             "name": "_aasd1",
-            "raw_value": 4744366,
-            "display_value": "65.89 小时",
+            "raw_value": 4816366,
+            "display_value": "66.89 小时",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 4744366
+                "value": 4816366
               }
             ]
           },
@@ -2222,13 +2222,13 @@
           {
             "uuid": "3d68d250-0931-318a-a9dd-ecf43c24514a",
             "name": "mulingyehua",
-            "raw_value": 105,
-            "display_value": "105",
+            "raw_value": 104,
+            "display_value": "104",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 73
+                "value": 72
               },
               {
                 "source": "生存",
@@ -3584,13 +3584,13 @@
           {
             "uuid": "3d68d250-0931-318a-a9dd-ecf43c24514a",
             "name": "mulingyehua",
-            "raw_value": 364102,
-            "display_value": "18,205 ❤",
+            "raw_value": 362117,
+            "display_value": "18,106 ❤",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 360644
+                "value": 358659
               },
               {
                 "source": "生存",
@@ -4749,13 +4749,13 @@
           {
             "uuid": "3d68d250-0931-318a-a9dd-ecf43c24514a",
             "name": "mulingyehua",
-            "raw_value": 124969,
-            "display_value": "6,248 ❤",
+            "raw_value": 124093,
+            "display_value": "6,205 ❤",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 110874
+                "value": 109998
               },
               {
                 "source": "生存",
@@ -7817,13 +7817,13 @@
           {
             "uuid": "3d68d250-0931-318a-a9dd-ecf43c24514a",
             "name": "mulingyehua",
-            "raw_value": 13142,
-            "display_value": "13,142",
+            "raw_value": 13133,
+            "display_value": "13,133",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 13125
+                "value": 13116
               },
               {
                 "source": "生存",
