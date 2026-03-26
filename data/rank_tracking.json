@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-26 12:57:39",
+  "last_updated": "2026-03-26 13:57:39",
   "data": {
     "总排行榜": [
       {
@@ -146,13 +146,13 @@
           {
             "uuid": "5a4786d5-00f0-4ab5-8dc6-8bf154d12c0d",
             "name": "_aasd",
-            "raw_value": 11148375,
-            "display_value": "154.84 小时",
+            "raw_value": 11220375,
+            "display_value": "155.84 小时",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 9738117
+                "value": 9810117
               },
               {
                 "source": "生存",
@@ -169,13 +169,13 @@
           {
             "uuid": "91d0e4e8-262b-45d9-a960-0a0468f502bd",
             "name": "_001",
-            "raw_value": 9948631,
-            "display_value": "138.18 小时",
+            "raw_value": 10020631,
+            "display_value": "139.18 小时",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 9948631
+                "value": 10020631
               }
             ]
           },
@@ -277,6 +277,19 @@
             ]
           },
           {
+            "uuid": "0fa473f5-d466-4b41-acc9-87c86cadede0",
+            "name": "_aasd1",
+            "raw_value": 8122366,
+            "display_value": "112.81 小时",
+            "sources": [
+              {
+                "source": "主城",
+                "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
+                "value": 8122366
+              }
+            ]
+          },
+          {
             "uuid": "d13ca8c9-139e-3031-8b1f-c3d0c3302fa7",
             "name": "yzwink",
             "raw_value": 8104641,
@@ -296,19 +309,6 @@
                 "source": "历史补偿",
                 "root_path": "/home/kanbara/MCSM/tool/Rankings/history_recovery",
                 "value": 2701547
-              }
-            ]
-          },
-          {
-            "uuid": "0fa473f5-d466-4b41-acc9-87c86cadede0",
-            "name": "_aasd1",
-            "raw_value": 8050366,
-            "display_value": "111.81 小时",
-            "sources": [
-              {
-                "source": "主城",
-                "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 8050366
               }
             ]
           },
