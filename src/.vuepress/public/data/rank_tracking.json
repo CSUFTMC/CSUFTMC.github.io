@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-28 11:33:51",
+  "last_updated": "2026-03-28 12:33:51",
   "data": {
     "总排行榜": [
       {
@@ -146,13 +146,13 @@
           {
             "uuid": "5a4786d5-00f0-4ab5-8dc6-8bf154d12c0d",
             "name": "_aasd",
-            "raw_value": 13365456,
-            "display_value": "185.63 小时",
+            "raw_value": 13437456,
+            "display_value": "186.63 小时",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 11955198
+                "value": 12027198
               },
               {
                 "source": "生存",
@@ -182,13 +182,13 @@
           {
             "uuid": "0fa473f5-d466-4b41-acc9-87c86cadede0",
             "name": "_aasd1",
-            "raw_value": 10161564,
-            "display_value": "141.13 小时",
+            "raw_value": 10233564,
+            "display_value": "142.13 小时",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 10161564
+                "value": 10233564
               }
             ]
           },
