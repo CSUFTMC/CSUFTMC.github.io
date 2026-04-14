@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-14 23:33:51",
+  "last_updated": "2026-04-15 00:33:51",
   "data": {
     "总排行榜": [
       {
@@ -39,13 +39,13 @@
           {
             "uuid": "9951989c-2df0-3829-9766-b9d3d973d79d",
             "name": "CHYALING",
-            "raw_value": 29898760,
-            "display_value": "415.26 小时",
+            "raw_value": 29931774,
+            "display_value": "415.72 小时",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 3591360
+                "value": 3624374
               },
               {
                 "source": "生存",
@@ -4646,13 +4646,13 @@
           {
             "uuid": "9951989c-2df0-3829-9766-b9d3d973d79d",
             "name": "CHYALING",
-            "raw_value": 351228,
-            "display_value": "17,561 ❤",
+            "raw_value": 351233,
+            "display_value": "17,562 ❤",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 58251
+                "value": 58256
               },
               {
                 "source": "生存",
