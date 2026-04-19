@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-19 20:59:45",
+  "last_updated": "2026-04-19 21:59:45",
   "data": {
     "总排行榜": [
       {
@@ -39,13 +39,13 @@
           {
             "uuid": "9951989c-2df0-3829-9766-b9d3d973d79d",
             "name": "CHYALING",
-            "raw_value": 30744214,
-            "display_value": "427.00 小时",
+            "raw_value": 30816214,
+            "display_value": "428.00 小时",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 4436814
+                "value": 4508814
               },
               {
                 "source": "生存",
@@ -182,13 +182,13 @@
           {
             "uuid": "91d0e4e8-262b-45d9-a960-0a0468f502bd",
             "name": "_001",
-            "raw_value": 11228816,
-            "display_value": "155.96 小时",
+            "raw_value": 11300816,
+            "display_value": "156.96 小时",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 11228816
+                "value": 11300816
               }
             ]
           },
@@ -3463,13 +3463,13 @@
           {
             "uuid": "9951989c-2df0-3829-9766-b9d3d973d79d",
             "name": "CHYALING",
-            "raw_value": 2111205,
-            "display_value": "105,560 ❤",
+            "raw_value": 2112005,
+            "display_value": "105,600 ❤",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 178882
+                "value": 179682
               },
               {
                 "source": "生存",
@@ -4646,13 +4646,13 @@
           {
             "uuid": "9951989c-2df0-3829-9766-b9d3d973d79d",
             "name": "CHYALING",
-            "raw_value": 356642,
-            "display_value": "17,832 ❤",
+            "raw_value": 357169,
+            "display_value": "17,858 ❤",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 63665
+                "value": 64192
               },
               {
                 "source": "生存",
@@ -6351,13 +6351,13 @@
           {
             "uuid": "9951989c-2df0-3829-9766-b9d3d973d79d",
             "name": "CHYALING",
-            "raw_value": 3710,
-            "display_value": "3,710",
+            "raw_value": 3712,
+            "display_value": "3,712",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 757
+                "value": 759
               },
               {
                 "source": "生存",
@@ -7168,13 +7168,13 @@
           {
             "uuid": "9951989c-2df0-3829-9766-b9d3d973d79d",
             "name": "CHYALING",
-            "raw_value": 1467,
-            "display_value": "1,467",
+            "raw_value": 1469,
+            "display_value": "1,469",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 305
+                "value": 307
               },
               {
                 "source": "生存",
@@ -7847,13 +7847,13 @@
           {
             "uuid": "9951989c-2df0-3829-9766-b9d3d973d79d",
             "name": "CHYALING",
-            "raw_value": 171117,
-            "display_value": "171,117",
+            "raw_value": 171121,
+            "display_value": "171,121",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 62859
+                "value": 62863
               },
               {
                 "source": "生存",
