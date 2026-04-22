@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-22 14:59:41",
+  "last_updated": "2026-04-22 15:59:45",
   "data": {
     "总排行榜": [
       {
@@ -141,13 +141,13 @@
           {
             "uuid": "5f30b7ad-10d2-3c80-b758-04bb932b0834",
             "name": "LiUAuXe",
-            "raw_value": 16940343,
-            "display_value": "235.28 小时",
+            "raw_value": 16952048,
+            "display_value": "235.45 小时",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 6419087
+                "value": 6430792
               },
               {
                 "source": "生存",
@@ -2154,13 +2154,13 @@
           {
             "uuid": "5f30b7ad-10d2-3c80-b758-04bb932b0834",
             "name": "LiUAuXe",
-            "raw_value": 438,
-            "display_value": "438",
+            "raw_value": 439,
+            "display_value": "439",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 153
+                "value": 154
               },
               {
                 "source": "生存",
@@ -4684,13 +4684,13 @@
           {
             "uuid": "5f30b7ad-10d2-3c80-b758-04bb932b0834",
             "name": "LiUAuXe",
-            "raw_value": 270037,
-            "display_value": "13,502 ❤",
+            "raw_value": 270326,
+            "display_value": "13,516 ❤",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 99397
+                "value": 99686
               },
               {
                 "source": "生存",
@@ -6494,13 +6494,13 @@
           {
             "uuid": "5f30b7ad-10d2-3c80-b758-04bb932b0834",
             "name": "LiUAuXe",
-            "raw_value": 589,
-            "display_value": "589",
+            "raw_value": 591,
+            "display_value": "591",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 337
+                "value": 339
               },
               {
                 "source": "生存",
@@ -7885,13 +7885,13 @@
           {
             "uuid": "5f30b7ad-10d2-3c80-b758-04bb932b0834",
             "name": "LiUAuXe",
-            "raw_value": 16672,
-            "display_value": "16,672",
+            "raw_value": 16677,
+            "display_value": "16,677",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 6794
+                "value": 6799
               },
               {
                 "source": "生存",
