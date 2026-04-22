@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-22 10:59:45",
+  "last_updated": "2026-04-22 14:59:41",
   "data": {
     "总排行榜": [
       {
@@ -141,13 +141,13 @@
           {
             "uuid": "5f30b7ad-10d2-3c80-b758-04bb932b0834",
             "name": "LiUAuXe",
-            "raw_value": 16886904,
-            "display_value": "234.54 小时",
+            "raw_value": 16940343,
+            "display_value": "235.28 小时",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 6365648
+                "value": 6419087
               },
               {
                 "source": "生存",
@@ -168,7 +168,7 @@
           },
           {
             "uuid": "0fa473f5-d466-4b41-acc9-87c86cadede0",
-            "name": "_aasd1",
+            "name": "0fa473f5-d466-4b41-acc9-87c86cadede0",
             "raw_value": 15811874,
             "display_value": "219.61 小时",
             "sources": [
@@ -176,19 +176,6 @@
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
                 "value": 15811874
-              }
-            ]
-          },
-          {
-            "uuid": "91d0e4e8-262b-45d9-a960-0a0468f502bd",
-            "name": "_001",
-            "raw_value": 15692816,
-            "display_value": "217.96 小时",
-            "sources": [
-              {
-                "source": "主城",
-                "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 15692816
               }
             ]
           },
@@ -383,7 +370,7 @@
           },
           {
             "uuid": "5707fa9c-35e8-457f-989a-1d7a47726245",
-            "name": "_bin",
+            "name": "5707fa9c-35e8-457f-989a-1d7a47726245",
             "raw_value": 4367997,
             "display_value": "60.67 小时",
             "sources": [
@@ -442,7 +429,7 @@
           },
           {
             "uuid": "075a3de3-60db-4be5-9eef-adc7757d4cab",
-            "name": "_002",
+            "name": "075a3de3-60db-4be5-9eef-adc7757d4cab",
             "raw_value": 2504803,
             "display_value": "34.79 小时",
             "sources": [
@@ -547,7 +534,7 @@
           },
           {
             "uuid": "f0edadee-3799-449b-9cdd-5c41174bcb9b",
-            "name": "_LiU",
+            "name": "f0edadee-3799-449b-9cdd-5c41174bcb9b",
             "raw_value": 696563,
             "display_value": "9.67 小时",
             "sources": [
@@ -770,7 +757,7 @@
           },
           {
             "uuid": "bfc7beff-81b8-4a71-bb5a-add52c209665",
-            "name": "_cehn1",
+            "name": "bfc7beff-81b8-4a71-bb5a-add52c209665",
             "raw_value": 353052,
             "display_value": "4.90 小时",
             "sources": [
@@ -906,7 +893,7 @@
           },
           {
             "uuid": "cd928706-85db-4482-af18-d5297e191180",
-            "name": "_youzhuta",
+            "name": "cd928706-85db-4482-af18-d5297e191180",
             "raw_value": 240143,
             "display_value": "3.34 小时",
             "sources": [
@@ -1057,7 +1044,7 @@
           },
           {
             "uuid": "f027048b-d600-4834-906e-46586920a022",
-            "name": "_yangmao",
+            "name": "f027048b-d600-4834-906e-46586920a022",
             "raw_value": 198384,
             "display_value": "2.76 小时",
             "sources": [
@@ -1088,7 +1075,7 @@
           },
           {
             "uuid": "ec7568a8-ba1e-4f54-9d4e-3121bd6df411",
-            "name": "_youzhu",
+            "name": "ec7568a8-ba1e-4f54-9d4e-3121bd6df411",
             "raw_value": 139513,
             "display_value": "1.94 小时",
             "sources": [
@@ -1119,7 +1106,7 @@
           },
           {
             "uuid": "b5800551-f79f-46e2-9e70-2d5596bb21a3",
-            "name": "_yzt",
+            "name": "b5800551-f79f-46e2-9e70-2d5596bb21a3",
             "raw_value": 118318,
             "display_value": "1.64 小时",
             "sources": [
@@ -1191,7 +1178,7 @@
           },
           {
             "uuid": "28b016f4-2c64-30b7-bfea-f11f358485e2",
-            "name": "zzmengkk",
+            "name": "28b016f4-2c64-30b7-bfea-f11f358485e2",
             "raw_value": 105600,
             "display_value": "1.47 小时",
             "sources": [
@@ -1319,7 +1306,7 @@
           },
           {
             "uuid": "f1417aea-5395-4273-a4da-04656dd5de00",
-            "name": "_114514",
+            "name": "f1417aea-5395-4273-a4da-04656dd5de00",
             "raw_value": 57142,
             "display_value": "0.79 小时",
             "sources": [
@@ -1409,7 +1396,7 @@
           },
           {
             "uuid": "fc2c0cff-7196-3669-bfde-5c57a790f779",
-            "name": "ovo",
+            "name": "fc2c0cff-7196-3669-bfde-5c57a790f779",
             "raw_value": 38882,
             "display_value": "0.54 小时",
             "sources": [
@@ -1561,7 +1548,7 @@
           },
           {
             "uuid": "3f021658-6b94-3f27-9a53-f4768a92e0c0",
-            "name": "ccc",
+            "name": "3f021658-6b94-3f27-9a53-f4768a92e0c0",
             "raw_value": 25289,
             "display_value": "0.35 小时",
             "sources": [
@@ -1682,7 +1669,7 @@
           },
           {
             "uuid": "7598d8f9-cb43-408f-8c6a-a6a9579d712c",
-            "name": "_aasd3",
+            "name": "7598d8f9-cb43-408f-8c6a-a6a9579d712c",
             "raw_value": 9374,
             "display_value": "0.13 小时",
             "sources": [
@@ -1736,7 +1723,7 @@
           },
           {
             "uuid": "6bea4030-4e9c-4227-8671-a6aaf5781eee",
-            "name": "_003",
+            "name": "6bea4030-4e9c-4227-8671-a6aaf5781eee",
             "raw_value": 5676,
             "display_value": "0.08 小时",
             "sources": [
@@ -1857,7 +1844,7 @@
           },
           {
             "uuid": "5f4f9612-b878-3a54-ae59-416da286e223",
-            "name": "bbb",
+            "name": "5f4f9612-b878-3a54-ae59-416da286e223",
             "raw_value": 3413,
             "display_value": "0.05 小时",
             "sources": [
@@ -1901,7 +1888,7 @@
           },
           {
             "uuid": "25966168-dc9c-360c-8f32-ed022bfa1070",
-            "name": "Herobrine",
+            "name": "25966168-dc9c-360c-8f32-ed022bfa1070",
             "raw_value": 1956,
             "display_value": "0.03 小时",
             "sources": [
@@ -2167,13 +2154,13 @@
           {
             "uuid": "5f30b7ad-10d2-3c80-b758-04bb932b0834",
             "name": "LiUAuXe",
-            "raw_value": 437,
-            "display_value": "437",
+            "raw_value": 438,
+            "display_value": "438",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 152
+                "value": 153
               },
               {
                 "source": "生存",
@@ -2886,7 +2873,7 @@
           },
           {
             "uuid": "28b016f4-2c64-30b7-bfea-f11f358485e2",
-            "name": "zzmengkk",
+            "name": "28b016f4-2c64-30b7-bfea-f11f358485e2",
             "raw_value": 9,
             "display_value": "9",
             "sources": [
@@ -3168,7 +3155,7 @@
           },
           {
             "uuid": "fc2c0cff-7196-3669-bfde-5c57a790f779",
-            "name": "ovo",
+            "name": "fc2c0cff-7196-3669-bfde-5c57a790f779",
             "raw_value": 3,
             "display_value": "3",
             "sources": [
@@ -3400,7 +3387,7 @@
           },
           {
             "uuid": "5f4f9612-b878-3a54-ae59-416da286e223",
-            "name": "bbb",
+            "name": "5f4f9612-b878-3a54-ae59-416da286e223",
             "raw_value": 1,
             "display_value": "1",
             "sources": [
@@ -3413,7 +3400,7 @@
           },
           {
             "uuid": "25966168-dc9c-360c-8f32-ed022bfa1070",
-            "name": "Herobrine",
+            "name": "25966168-dc9c-360c-8f32-ed022bfa1070",
             "raw_value": 1,
             "display_value": "1",
             "sources": [
@@ -3565,13 +3552,13 @@
           {
             "uuid": "5f30b7ad-10d2-3c80-b758-04bb932b0834",
             "name": "LiUAuXe",
-            "raw_value": 469152,
-            "display_value": "23,458 ❤",
+            "raw_value": 469409,
+            "display_value": "23,470 ❤",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 167442
+                "value": 167699
               },
               {
                 "source": "生存",
@@ -4062,7 +4049,7 @@
           },
           {
             "uuid": "fc2c0cff-7196-3669-bfde-5c57a790f779",
-            "name": "ovo",
+            "name": "fc2c0cff-7196-3669-bfde-5c57a790f779",
             "raw_value": 5144,
             "display_value": "257 ❤",
             "sources": [
@@ -4075,7 +4062,7 @@
           },
           {
             "uuid": "28b016f4-2c64-30b7-bfea-f11f358485e2",
-            "name": "zzmengkk",
+            "name": "28b016f4-2c64-30b7-bfea-f11f358485e2",
             "raw_value": 4437,
             "display_value": "222 ❤",
             "sources": [
@@ -4697,13 +4684,13 @@
           {
             "uuid": "5f30b7ad-10d2-3c80-b758-04bb932b0834",
             "name": "LiUAuXe",
-            "raw_value": 269231,
-            "display_value": "13,462 ❤",
+            "raw_value": 270037,
+            "display_value": "13,502 ❤",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 98591
+                "value": 99397
               },
               {
                 "source": "生存",
@@ -5355,7 +5342,7 @@
           },
           {
             "uuid": "28b016f4-2c64-30b7-bfea-f11f358485e2",
-            "name": "zzmengkk",
+            "name": "28b016f4-2c64-30b7-bfea-f11f358485e2",
             "raw_value": 6020,
             "display_value": "301 ❤",
             "sources": [
@@ -5537,7 +5524,7 @@
           },
           {
             "uuid": "fc2c0cff-7196-3669-bfde-5c57a790f779",
-            "name": "ovo",
+            "name": "fc2c0cff-7196-3669-bfde-5c57a790f779",
             "raw_value": 2150,
             "display_value": "108 ❤",
             "sources": [
@@ -5917,7 +5904,7 @@
           },
           {
             "uuid": "5f4f9612-b878-3a54-ae59-416da286e223",
-            "name": "bbb",
+            "name": "5f4f9612-b878-3a54-ae59-416da286e223",
             "raw_value": 360,
             "display_value": "18 ❤",
             "sources": [
@@ -5971,7 +5958,7 @@
           },
           {
             "uuid": "25966168-dc9c-360c-8f32-ed022bfa1070",
-            "name": "Herobrine",
+            "name": "25966168-dc9c-360c-8f32-ed022bfa1070",
             "raw_value": 260,
             "display_value": "13 ❤",
             "sources": [
@@ -6316,7 +6303,7 @@
           },
           {
             "uuid": "28b016f4-2c64-30b7-bfea-f11f358485e2",
-            "name": "zzmengkk",
+            "name": "28b016f4-2c64-30b7-bfea-f11f358485e2",
             "raw_value": 2,
             "display_value": "2",
             "sources": [
@@ -6851,7 +6838,7 @@
           },
           {
             "uuid": "fc2c0cff-7196-3669-bfde-5c57a790f779",
-            "name": "ovo",
+            "name": "fc2c0cff-7196-3669-bfde-5c57a790f779",
             "raw_value": 16,
             "display_value": "16",
             "sources": [
@@ -6987,7 +6974,7 @@
           },
           {
             "uuid": "28b016f4-2c64-30b7-bfea-f11f358485e2",
-            "name": "zzmengkk",
+            "name": "28b016f4-2c64-30b7-bfea-f11f358485e2",
             "raw_value": 7,
             "display_value": "7",
             "sources": [
@@ -7306,13 +7293,13 @@
           {
             "uuid": "5f30b7ad-10d2-3c80-b758-04bb932b0834",
             "name": "LiUAuXe",
-            "raw_value": 608,
-            "display_value": "608",
+            "raw_value": 610,
+            "display_value": "610",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 238
+                "value": 240
               },
               {
                 "source": "生存",
@@ -7671,7 +7658,7 @@
           },
           {
             "uuid": "fc2c0cff-7196-3669-bfde-5c57a790f779",
-            "name": "ovo",
+            "name": "fc2c0cff-7196-3669-bfde-5c57a790f779",
             "raw_value": 3,
             "display_value": "3",
             "sources": [
@@ -7898,13 +7885,13 @@
           {
             "uuid": "5f30b7ad-10d2-3c80-b758-04bb932b0834",
             "name": "LiUAuXe",
-            "raw_value": 16670,
-            "display_value": "16,670",
+            "raw_value": 16672,
+            "display_value": "16,672",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 6792
+                "value": 6794
               },
               {
                 "source": "生存",
@@ -8370,7 +8357,7 @@
           },
           {
             "uuid": "28b016f4-2c64-30b7-bfea-f11f358485e2",
-            "name": "zzmengkk",
+            "name": "28b016f4-2c64-30b7-bfea-f11f358485e2",
             "raw_value": 46,
             "display_value": "46",
             "sources": [
@@ -8457,7 +8444,7 @@
           },
           {
             "uuid": "fc2c0cff-7196-3669-bfde-5c57a790f779",
-            "name": "ovo",
+            "name": "fc2c0cff-7196-3669-bfde-5c57a790f779",
             "raw_value": 24,
             "display_value": "24",
             "sources": [
