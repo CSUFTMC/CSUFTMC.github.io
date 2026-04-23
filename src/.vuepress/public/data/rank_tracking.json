@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-23 13:59:45",
+  "last_updated": "2026-04-23 14:59:45",
   "data": {
     "总排行榜": [
       {
@@ -348,13 +348,13 @@
           {
             "uuid": "047c9368-32e3-3ca8-8f37-1ad59b8848a0",
             "name": "LEEKUNJIE",
-            "raw_value": 5304955,
-            "display_value": "73.68 小时",
+            "raw_value": 5314227,
+            "display_value": "73.81 小时",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 32894
+                "value": 42166
               },
               {
                 "source": "生存",
@@ -4906,13 +4906,13 @@
           {
             "uuid": "047c9368-32e3-3ca8-8f37-1ad59b8848a0",
             "name": "LEEKUNJIE",
-            "raw_value": 55624,
-            "display_value": "2,781 ❤",
+            "raw_value": 55895,
+            "display_value": "2,795 ❤",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 338
+                "value": 609
               },
               {
                 "source": "生存",
@@ -7783,13 +7783,13 @@
           {
             "uuid": "047c9368-32e3-3ca8-8f37-1ad59b8848a0",
             "name": "LEEKUNJIE",
-            "raw_value": 255288,
-            "display_value": "255,288",
+            "raw_value": 255291,
+            "display_value": "255,291",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 85112
+                "value": 85115
               },
               {
                 "source": "生存",
