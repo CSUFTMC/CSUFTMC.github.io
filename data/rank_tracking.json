@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-23 17:59:45",
+  "last_updated": "2026-04-23 18:59:45",
   "data": {
     "总排行榜": [
       {
@@ -39,13 +39,13 @@
           {
             "uuid": "9951989c-2df0-3829-9766-b9d3d973d79d",
             "name": "CHYALING",
-            "raw_value": 31161419,
-            "display_value": "432.80 小时",
+            "raw_value": 31173587,
+            "display_value": "432.97 小时",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 4854019
+                "value": 4866187
               },
               {
                 "source": "生存",
@@ -3450,13 +3450,13 @@
           {
             "uuid": "9951989c-2df0-3829-9766-b9d3d973d79d",
             "name": "CHYALING",
-            "raw_value": 2121905,
-            "display_value": "106,095 ❤",
+            "raw_value": 2122065,
+            "display_value": "106,103 ❤",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 189582
+                "value": 189742
               },
               {
                 "source": "生存",
@@ -4633,13 +4633,13 @@
           {
             "uuid": "9951989c-2df0-3829-9766-b9d3d973d79d",
             "name": "CHYALING",
-            "raw_value": 366197,
-            "display_value": "18,310 ❤",
+            "raw_value": 366532,
+            "display_value": "18,327 ❤",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 73220
+                "value": 73555
               },
               {
                 "source": "生存",
@@ -7834,13 +7834,13 @@
           {
             "uuid": "9951989c-2df0-3829-9766-b9d3d973d79d",
             "name": "CHYALING",
-            "raw_value": 172236,
-            "display_value": "172,236",
+            "raw_value": 172237,
+            "display_value": "172,237",
             "sources": [
               {
                 "source": "主城",
                 "root_path": "/home/kanbara/MCSM/MinecraftServer/NeoL/main",
-                "value": 63978
+                "value": 63979
               },
               {
                 "source": "生存",
